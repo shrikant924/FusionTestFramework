@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230315 20:17:58.533" rpa="false" schemaversion="3">
+<suite id="s1" name="TC002 - Verify that Deep link URL is providing QR code" source="D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestcaseSuite\TC002 - Verify that Deep link URL is providing QR code.robot">
+<test id="s1-t1" name="Verify that Deep link URL is providing QR code" line="9">
+<kw name="Launch browser and input url" library="Setup keywords" type="SETUP">
+<kw name="Open Browser" library="WebApplicationTestLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<arg>executable_path=drivers/chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230315 20:17:59.641" level="INFO">Opening browser 'chrome' to base url 'https://social.vision-project.co/?studyID=d2563e38-04e4-4c06-8323-f8c4722040b0&amp;userID=Jai'.</msg>
+<status status="PASS" starttime="20230315 20:17:59.640" endtime="20230315 20:18:03.991"/>
+</kw>
+<kw name="Maximize Browser Window" library="WebApplicationTestLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230315 20:18:03.992" endtime="20230315 20:18:04.123"/>
+</kw>
+<status status="PASS" starttime="20230315 20:17:59.639" endtime="20230315 20:18:04.124"/>
+</kw>
+<kw name="wait until QR code generated and validate QR code link details and log to console" library="QR_Code_page_keywords">
+<kw name="Wait Until Page Contains" library="WebApplicationTestLibrary">
+<arg>Study cannot be conducted here</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230315 20:18:04.125" endtime="20230315 20:18:04.153"/>
+</kw>
+<kw name="Element Should Be Visible" library="WebApplicationTestLibrary">
+<arg>${QR_Code}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230315 20:18:04.226" level="INFO">Element '//*[@viewBox='0 0 256 256']' is displayed.</msg>
+<status status="PASS" starttime="20230315 20:18:04.153" endtime="20230315 20:18:04.226"/>
+</kw>
+<kw name="Capture Element Screenshot" library="WebApplicationTestLibrary">
+<var>${captured_img}</var>
+<arg>${QR_Code}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20230315 20:18:04.418" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-1.png"&gt;&lt;img src="selenium-element-screenshot-1.png" width="400px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230315 20:18:04.418" level="INFO">${captured_img} = D:\FusionTestFramework\log\selenium-element-screenshot-1.png</msg>
+<status status="PASS" starttime="20230315 20:18:04.226" endtime="20230315 20:18:04.418"/>
+</kw>
+<kw name="Scan QR Code" library="WebApplicationTestLibrary">
+<var>${QRCodedata}</var>
+<arg>${captured_img}</arg>
+<msg timestamp="20230315 20:18:05.393" level="INFO">3.4.1 (3, 4, 1)</msg>
+<msg timestamp="20230315 20:18:05.394" level="INFO">${QRCodedata} = BarCode(raw='https://social.vision-project.co/?studyID=d2563e38-04e4-4c06-8323-f8c4722040b0&amp;userID=Jai', parsed='https://social.vision-project.co/?studyID=d2563e38-04e4-4c06-8323-f8c4722040b0&amp;userID=J...</msg>
+<status status="PASS" starttime="20230315 20:18:04.418" endtime="20230315 20:18:05.394"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${QRCodedata}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230315 20:18:05.394" endtime="20230315 20:18:05.394"/>
+</kw>
+<status status="PASS" starttime="20230315 20:18:04.124" endtime="20230315 20:18:05.394"/>
+</kw>
+<kw name="Close Browser" library="WebApplicationTestLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230315 20:18:05.397" endtime="20230315 20:18:08.043"/>
+</kw>
+<doc>verification of barcode generation of specified link</doc>
+<tag>regression</tag>
+<status status="PASS" starttime="20230315 20:17:59.637" endtime="20230315 20:18:08.043"/>
+</test>
+<status status="PASS" starttime="20230315 20:17:58.566" endtime="20230315 20:18:08.045"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">regression</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC002 - Verify that Deep link URL is providing QR code">TC002 - Verify that Deep link URL is providing QR code</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
