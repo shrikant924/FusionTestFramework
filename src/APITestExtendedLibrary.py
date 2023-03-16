@@ -4,7 +4,8 @@ from RequestsLibrary import RequestsLibrary
 
 @library
 class APITestExtendedLibrary (RequestsLibrary):
-
-   def test(self):
-      pass
+    
+    def __init__(self):
+        super().__init__()
    
+      
