@@ -1,14 +1,10 @@
-from AppiumLibrary import AppiumLibrary
 from robot.api.deco import keyword, library
 from robot.libraries.BuiltIn import BuiltIn
+from MobileTestLibrary.ExtendedAppiumLibrary import ExtendedAppiumLibrary
 
 
 @library
-class NativeAppsUtil(AppiumLibrary):
-
-    def __init__(self):
-        super().__init__()
-        super(AppiumLibrary, self).__init__()
+class NativeAppsUtil(ExtendedAppiumLibrary):
 
     @keyword
     def press_enter_key(self):

@@ -1,59 +1,16 @@
 import time
 
-from AppiumLibrary import AppiumLibrary
+from AppiumLibrary import *
 from appium.webdriver.common.appiumby import AppiumBy
 from appium.webdriver.common.touch_action import TouchAction
 from robot.api.deco import library, keyword
 
-
 @library
 class ExtendedAppiumLibrary(AppiumLibrary):
-    def __init__(self):
-        super(AppiumLibrary, self).__init__()
-
-    @property
-    def _log_level(self):
-        return super()._log_level
-
-    @keyword
-    def _debug(self, message):
-        super()._debug(message)
-
-    @keyword
-    def _info(self, message):
-        super()._info(message)
-
-    @keyword
-    def _warn(self, message):
-        super()._warn(message)
-
-    @keyword
-    def _html(self, message):
-        super()._html(message)
-
-    @keyword
-    def _get_log_dir(self):
-        return super()._get_log_dir()
-
-    @keyword
-    def _log(self, message, level='INFO'):
-        super()._log(message, level)
-
-    @keyword
-    def _log_list(self, items, what='item'):
-        return super()._log_list(items, what)
 
     @keyword
     def register_keyword_to_run_on_failure(self, keyword):
         return super().register_keyword_to_run_on_failure(keyword)
-
-    @keyword
-    def _run_on_failure(self):
-        super()._run_on_failure()
-
-    @keyword
-    def _run_on_failure_error(self, err):
-        super()._run_on_failure_error(err)
 
     @keyword
     def clear_text(self, locator):
@@ -180,7 +137,7 @@ class ExtendedAppiumLibrary(AppiumLibrary):
         return super().get_element_rect(locator)
 
     @keyword
-    def get_text2(self, locator):
+    def get_text(self, locator):
         return super().get_text(locator)
 
     @keyword
@@ -196,80 +153,8 @@ class ExtendedAppiumLibrary(AppiumLibrary):
         return super().xpath_should_match_x_times(xpath, count, error, loglevel)
 
     @keyword
-    def _is_index(self, index_or_name):
-        return super()._is_index(index_or_name)
-
-    @keyword
-    def _click_element_by_name(self, name):
-        return super()._click_element_by_name(name)
-
-    @keyword
-    def _find_elements_by_class_name(self, class_name):
-        return super()._find_elements_by_class_name(class_name)
-
-    @keyword
-    def _find_element_by_class_name(self, class_name, index_or_name):
-        return super()._find_element_by_class_name(class_name, index_or_name)
-
-    @keyword
-    def _get_class(self, platform_class_dict):
-        return super()._get_class(platform_class_dict)
-
-    @keyword
-    def _is_support_platform(self, platform_class_dict):
-        return super()._is_support_platform(platform_class_dict)
-
-    @keyword
-    def _click_element_by_class_name(self, class_name, index_or_name):
-        return super()._click_element_by_class_name(class_name, index_or_name)
-
-    @keyword
-    def _element_clear_text_by_locator(self, locator):
-        return super()._element_clear_text_by_locator(locator)
-
-    @keyword
-    def _element_input_text_by_locator(self, locator, text):
-        return super()._element_input_text_by_locator(locator, text)
-
-    @keyword
-    def _element_input_text_by_class_name(self, class_name, index_or_name, text):
-        return super()._element_input_text_by_class_name(class_name, index_or_name, text)
-
-    @keyword
-    def _element_input_value_by_locator(self, locator, text):
-        return super()._element_input_value_by_locator(locator, text)
-
-    @keyword
-    def _element_find(self, locator, first_only, required, tag=None):
-        return super()._element_find(locator, first_only, required, tag)
-
-    @keyword
-    def _element_find_by_text(self, text, exact_match=False):
-        return super()._element_find_by_text(text, exact_match)
-
-    @keyword
-    def _get_text(self, locator):
-        return super()._get_text(locator)
-
-    @keyword
-    def _is_text_present(self, text):
-        return super()._is_text_present(text)
-
-    @keyword
-    def _is_element_present(self, locator):
-        return super()._is_element_present(locator)
-
-    @keyword
-    def _is_visible(self, locator):
-        return super()._is_visible(locator)
-
-    @keyword
     def capture_page_screenshot(self, filename=None):
         return super().capture_page_screenshot(filename)
-
-    @keyword
-    def _get_screenshot_paths(self, filename):
-        return super()._get_screenshot_paths(filename)
 
     @keyword
     def close_application(self):
@@ -440,30 +325,6 @@ class ExtendedAppiumLibrary(AppiumLibrary):
         return super().get_windows()
 
     @keyword
-    def _current_application(self):
-        return super()._current_application()
-
-    @keyword
-    def _get_platform(self):
-        return super()._get_platform()
-
-    @keyword
-    def _is_platform(self, platform):
-        return super()._is_platform(platform)
-
-    @keyword
-    def _is_ios(self):
-        return super()._is_ios()
-
-    @keyword
-    def _is_android(self):
-        return super()._is_android()
-
-    @keyword
-    def _rotate(self, orientation):
-        super()._rotate(orientation)
-
-    @keyword
     def wait_until_element_is_visible(self, locator, timeout=None, error=None):
         super().wait_until_element_is_visible(locator, timeout, error)
 
@@ -482,18 +343,6 @@ class ExtendedAppiumLibrary(AppiumLibrary):
     @keyword
     def wait_until_page_does_not_contain_element(self, locator, timeout=None, error=None):
         super().wait_until_page_does_not_contain_element(locator, timeout, error)
-
-    @keyword
-    def _wait_until(self, timeout, error, function, *args):
-        super()._wait_until(timeout, error, function, *args)
-
-    @keyword
-    def _wait_until_no_error(self, timeout, wait_func, *args):
-        super()._wait_until_no_error(timeout, wait_func, *args)
-
-    @keyword
-    def _format_timeout(self, timeout):
-        return super()._format_timeout(timeout)
 
     @keyword
     def zoom(self, locator, percent="200%", steps=1):
@@ -619,21 +468,7 @@ class ExtendedAppiumLibrary(AppiumLibrary):
     def stop_screen_recording(self, filename=None, **options):
         return super().stop_screen_recording(filename, **options)
 
-    @keyword
-    def _save_recording(self, filename, options):
-        return super()._save_recording(filename, options)
-
-    @keyword
-    def _set_output_format(self):
-        return super()._set_output_format()
-
-    @keyword
-    def _get_screenrecord_paths(self, options, filename=None):
-        return super()._get_screenrecord_paths(options, filename)
-
-    @keyword
-    def _is_remotepath_set(self, options):
-        return super()._is_remotepath_set(options)
+###################################################################################################
 
     @keyword
     def get_text_from_index(self, txt, startIndex, lastIndex):
@@ -657,7 +492,6 @@ class ExtendedAppiumLibrary(AppiumLibrary):
 
     @keyword
     def scroll_to_element_By_Exact_Text_in_longView(self, element, MaxSwapCount):
-
         """ element : give exact text of elements
             MaxSwapCount : Input how many times you have to swap to find element"""
 
@@ -685,7 +519,6 @@ class ExtendedAppiumLibrary(AppiumLibrary):
 
     @keyword
     def scroll_to_element_by_Partial_text_in_longView(self, element_text, MaxSwapCount):
-
         """ element_text : give partial element text of elements
             MaxSwapCount : Input how many times you have to swap to find element"""
 
@@ -719,7 +552,6 @@ class ExtendedAppiumLibrary(AppiumLibrary):
                 break
             else:
                 time.sleep(0.5)
-
         return self
 
     @keyword
@@ -730,3 +562,4 @@ class ExtendedAppiumLibrary(AppiumLibrary):
         action.long_press(elementid).perform()
         action.tap(elementid).perform()
         return self
+

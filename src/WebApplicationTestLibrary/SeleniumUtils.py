@@ -1,11 +1,10 @@
+from typing import Optional, Union
+from SeleniumLibrary import SeleniumLibrary
 from robot.api.deco import library, keyword
 from robot.libraries.BuiltIn import BuiltIn
 
 
-class SeleniumUtils:
-    @property
-    def selenium_library_instance(self):
-        return BuiltIn().get_library_instance('Selenium2Library')
+class SeleniumUtils(SeleniumLibrary):
 
     @keyword
     def scan_QR_code(self, img):
@@ -14,3 +13,6 @@ class SeleniumUtils:
         print(reader.zxing_version, reader.zxing_version_info)
         barcode = reader.decode(img)
         return barcode
+        
+        
+    

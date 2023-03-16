@@ -24,7 +24,7 @@ Launch Test application
     MobileTestLibrary.Set Appium Timeout    30
 
 close Test application
-    Run Keyword And Continue On Failure    MobileTestLibrary.Close Application
+    Run Keyword And Continue On Failure    Close Application
     Run Keyword And Continue On Failure    WebApplicationTestLibrary.Close Browser
     Run Keyword And Continue On Failure    WebApplicationTestLibrary.Close All Browsers
-    Run Keyword And Continue On Failure    MobileTestLibrary.Close All Applications
+    Run Keyword And Continue On Failure    Close All Applications
