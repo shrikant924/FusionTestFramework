@@ -1,3 +1,0 @@
-window.keywords4 = [[1,1,2,0,0,0,0,0,[0,989,15],[[0,3,4,0,5,6,0,0,[0,990,11],[[996,5,7]]],[0,8,4,0,9,0,0,0,[3,1002,0],[]]]],[2,10,4,0,11,0,0,0,[1,1005,0],[]]];
-window.strings4 = ["*","*Launch browser and input url","*Setup keywords","*Open Browser","*WebApplicationTestLibrary","*<p>Opens a new browser instance to the optional <code>url\x3c/code>.\x3c/p>","*${url}, ${Browser}, executable_path=drivers/chromedriver.exe","*Variable '${url}' not found.","*Maximize Browser Window","*<p>Maximizes current browser window.\x3c/p>","*Close Browser","*<p>Closes the current browser.\x3c/p>"];
-window.fileLoading.notify("DEBUG-4.js");
