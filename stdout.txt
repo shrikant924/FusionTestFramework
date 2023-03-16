@@ -1,0 +1,103 @@
+==============================================================================
+Example                                                                       
+==============================================================================
+Example.TC001 - Tap on 'Privacy policy' and verify user is landing on Priva...
+==============================================================================
+Tap on 'Privacy policy' and verify user is landing on Privacy poli... | FAIL |
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at getResponseForW3CError (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+------------------------------------------------------------------------------
+Example.TC001 - Tap on 'Privacy policy' and verify user is landing... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Example.TC002 - Verify that Deep link URL is providing QR code                
+==============================================================================
+Verify that Deep link URL is providing QR code :: verification of ... | FAIL |
+Setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00DD37D3]
+	(No symbol) [0x00D68B81]
+	(No symbol) [0x00C6B36D]
+	(No symbol) [0x00C4E5DA]
+	(No symbol) [0x00CBF0CB]
+	(No symbol) [0x00CD0A56]
+	(No symbol) [0x00CBB216]
+	(No symbol) [0x00C90D97]
+	(No symbol) [0x00C9253D]
+	GetHandleVerifier [0x0104ABF2+2510930]
+	GetHandleVerifier [0x01078EC1+2700065]
+	GetHandleVerifier [0x0107C86C+2714828]
+	GetHandleVerifier [0x00E83480+645344]
+	(No symbol) [0x00D70FD2]
+	(No symbol) [0x00D76C68]
+	(No symbol) [0x00D76D4B]
+	(No symbol) [0x00D80D6B]
+	BaseThreadInitThunk [0x756D00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77857BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77857B8E+238]
+------------------------------------------------------------------------------
+Example.TC002 - Verify that Deep link URL is providing QR code        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Example.TC003 - Verify that Google Play button redirecting user to Vision P...
+==============================================================================
+Verify that Google Play button redirecting user to Vision Project ... | FAIL |
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at getResponseForW3CError (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+------------------------------------------------------------------------------
+Example.TC003 - Verify that Google Play button redirecting user to... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Example.TC004 - Verify that if social app is not installed on phone then Ap...
+==============================================================================
+Verify that if social app is not installed on phone then App was n... | FAIL |
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at getResponseForW3CError (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+------------------------------------------------------------------------------
+Example.TC004 - Verify that if social app is not installed on phon... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Example.TC005 - Verify welcome page journey is as excepted                    
+==============================================================================
+Verify that user is able to paste study link using Paste study lin... | FAIL |
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at getResponseForW3CError (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+------------------------------------------------------------------------------
+Verify that Help page open up when user taps on help icon"?" :: Ve... | FAIL |
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.playgroundxyz.vision_project' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.MainActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.playgroundxyz.vision_project' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.MainActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at getResponseForW3CError (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+------------------------------------------------------------------------------
+Example.TC005 - Verify welcome page journey is as excepted            | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Example.TC006 - sample                                                        
+==============================================================================
+Testcase001                                                           | PASS |
+------------------------------------------------------------------------------
+Example.TC006 - sample                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Example                                                               | FAIL |
+7 tests, 1 passed, 6 failed
+==============================================================================
+Output:  D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestResults\16-03-23_21-58-02\output.xml
+Report:  D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestResults\16-03-23_21-58-02\report.html

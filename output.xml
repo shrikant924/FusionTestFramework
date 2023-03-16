@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230316 21:23:28.968" rpa="false" schemaversion="3">
+<suite id="s1" name="TC003 - Verify that Google Play button redirecting user to Vision Project on play store" source="d:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestcaseSuite\TC003 - Verify that Google Play button redirecting user to Vision Project on play store.robot">
+<kw name="Setup before suit start" library="Setup keywords" type="SETUP">
+<kw name="Start Appium Service" library="MobileTestLibrary">
+<msg timestamp="20230316 21:23:33.375" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(&lt;urllib3.connection.HTTPConnection object at 0x0000021B900BB340&gt;, 'Connection to 127.0.0.1 timed out. (connect timeout=1.0)')': /wd/hub/status</msg>
+<msg timestamp="20230316 21:23:34.391" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(&lt;urllib3.connection.HTTPConnection object at 0x0000021B901997F0&gt;, 'Connection to 127.0.0.1 timed out. (connect timeout=1.0)')': /wd/hub/status</msg>
+<status status="PASS" starttime="20230316 21:23:30.904" endtime="20230316 21:23:35.006"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>DEBUG</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<msg timestamp="20230316 21:23:35.009" level="INFO">Log level changed from INFO to DEBUG.</msg>
+<status status="PASS" starttime="20230316 21:23:35.009" endtime="20230316 21:23:35.009"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Appium server started .....</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230316 21:23:35.009" endtime="20230316 21:23:35.017"/>
+</kw>
+<status status="PASS" starttime="20230316 21:23:30.903" endtime="20230316 21:23:35.017"/>
+</kw>
+<test id="s1-t1" name="Verify that Google Play button redirecting user to Vision Project on play store" line="11">
+<kw name="Launch Test application" library="Setup keywords" type="SETUP">
+<kw name="Open Application" library="MobileTestLibrary">
+<arg>${remote_url}</arg>
+<arg>&amp;{device}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<msg timestamp="20230316 21:23:35.057" level="DEBUG">POST http://localhost:4723/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "android", "appium:platformVersion": "11.0", "appium:deviceName": "emulator-5554", "appium:automationName": "UiAutomator2", "appium:appPackage": "com.androidsample.generalstore", "appium:appActivity": ".MainActivity", "appium:chromedriverUseSystemExecutable": true, "appium:chromedriverExecutableDir": "drivers/chromedriver.exe", "appium:automationType": "app", "appium:sessionName": "Automation test session", "appium:sessionDescription": "", "appium:deviceOrientation": "portrait", "appium:noReset": true, "appium:fullReset": false, "appium:captureScreenshots": true, "appium:udid": "emulator-5554", "appium:appium-url": "http://0.0.0.0:4723/wd/hub", "appium:avd": "Pixel_3a_API_30"}}}</msg>
+<msg timestamp="20230316 21:23:35.179" level="DEBUG">Starting new HTTP connection (1): localhost:4723</msg>
+<msg timestamp="20230316 21:24:01.756" level="DEBUG">http://localhost:4723 "POST /wd/hub/session HTTP/1.1" 200 1643</msg>
+<msg timestamp="20230316 21:24:01.757" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","platformVersion":"11.0","deviceName":"emulator-5554","automationName":"UiAutomator2","appPackage":"com.androidsample.generalstore","appActivity":".MainActivity","chromedriverUseSystemExecutable":true,"chromedriverExecutableDir":"drivers/chromedriver.exe","automationType":"app","sessionName":"Automation test session","sessionDescription":"","deviceOrientation":"portrait","noReset":true,"fullReset":false,"captureScreenshots":true,"udid":"emulator-5554","appium-url":"http://0.0.0.0:4723/wd/hub","avd":"Pixel_3a_API_30"},"platformName":"android","platformVersion":"11","deviceName":"emulator-5554","automationName":"UiAutomator2","appPackage":"com.androidsample.generalstore","appActivity":".MainActivity","chromedriverUseSystemExecutable":true,"chromedriverExecutableDir":"drivers/chromedriver.exe","automationType":"app","sessionName":"Automation test session","sessionDescription":"","deviceOrientation":"portrait","noReset":true,"fullReset":false,"captureScreenshots":true,"udid":"emulator-5554","appium-url":"http://0.0.0.0:4723/wd/hub","avd":"Pixel_3a_API_30","deviceUDID":"emulator-5554","deviceApiLevel":30,"deviceScreenSize":"1080x2220","deviceScreenDensity":440,"deviceModel":"sdk_gphone_x86","deviceManufacturer":"Google","pixelRatio":2.75,"statBarHeight":66,"viewportRect":{"left":0,"top":66,"width":1080,"height":2022}},"sessionId":"59f33cba-f2b6-48a1-a4e9-24ac9a90dcda"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1643', 'ETag': 'W/"66b-qnDw+3B1OjVgMCyteJKV+czU10o"', 'Date': 'Thu, 16 Mar 2023 15:54:01 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20230316 21:24:01.757" level="DEBUG">Finished Request</msg>
+<msg timestamp="20230316 21:24:01.772" level="DEBUG">Opened application with session id 59f33cba-f2b6-48a1-a4e9-24ac9a90dcda</msg>
+<status status="PASS" starttime="20230316 21:23:35.038" endtime="20230316 21:24:01.772"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>DEBUG</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<msg timestamp="20230316 21:24:01.775" level="INFO">Log level changed from DEBUG to DEBUG.</msg>
+<status status="PASS" starttime="20230316 21:24:01.773" endtime="20230316 21:24:01.775"/>
+</kw>
+<kw name="Set Appium Timeout" library="MobileTestLibrary">
+<arg>30</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="PASS" starttime="20230316 21:24:01.776" endtime="20230316 21:24:01.777"/>
+</kw>
+<status status="PASS" starttime="20230316 21:23:35.035" endtime="20230316 21:24:01.779"/>
+</kw>
+<kw name="launch camera app and wait until user scan the QR code from study link url" library="launch_flow_keywords">
+<kw name="Start Activity" library="MobileTestLibrary">
+<arg>com.google.android.GoogleCamera</arg>
+<arg>com.android.camera.CameraLauncher</arg>
+<doc>Opens an arbitrary activity during a test. If the activity belongs to
+another application, that application is started and the activity is opened.</doc>
+<msg timestamp="20230316 21:24:01.803" level="DEBUG">POST http://localhost:4723/wd/hub/session/59f33cba-f2b6-48a1-a4e9-24ac9a90dcda/appium/device/start_activity {"appPackage": "com.google.android.GoogleCamera", "appActivity": "com.android.camera.CameraLauncher"}</msg>
+<msg timestamp="20230316 21:24:02.931" level="DEBUG">http://localhost:4723 "POST /wd/hub/session/59f33cba-f2b6-48a1-a4e9-24ac9a90dcda/appium/device/start_activity HTTP/1.1" 500 1751</msg>
+<msg timestamp="20230316 21:24:02.931" level="DEBUG">Remote response: status=500 | data={"value":{"error":"unknown error","message":"An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity","stacktrace":"UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity\n    at getResponseForW3CError (C:\\Users\\ZMO-WIN-ShrikantL-01\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\protocol\\errors.js:804:9)\n    at asyncHandler (C:\\Users\\ZMO-WIN-ShrikantL-01\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\protocol\\protocol.js:380:37)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1751', 'ETag': 'W/"6d7-WlBmgyk16ZNxZk1lbkw110z/bJA"', 'Date': 'Thu, 16 Mar 2023 15:54:02 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20230316 21:24:02.932" level="DEBUG">Finished Request</msg>
+<kw name="Capture Page Screenshot">
+<msg timestamp="20230316 21:24:02.935" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    MobileTestLibrary.Capture Page Screenshot
+    WebApplicationTestLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" starttime="20230316 21:24:02.934" endtime="20230316 21:24:02.938"/>
+</kw>
+<msg timestamp="20230316 21:24:02.947" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    MobileTestLibrary.Capture Page Screenshot
+    WebApplicationTestLibrary.Capture Page Screenshot</msg>
+<kw name="Capture Page Screenshot">
+<msg timestamp="20230316 21:24:02.955" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    MobileTestLibrary.Capture Page Screenshot
+    WebApplicationTestLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" starttime="20230316 21:24:02.954" endtime="20230316 21:24:02.955"/>
+</kw>
+<msg timestamp="20230316 21:24:02.963" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    MobileTestLibrary.Capture Page Screenshot
+    WebApplicationTestLibrary.Capture Page Screenshot</msg>
+<kw name="Capture Page Screenshot">
+<msg timestamp="20230316 21:24:02.968" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    MobileTestLibrary.Capture Page Screenshot
+    WebApplicationTestLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" starttime="20230316 21:24:02.967" endtime="20230316 21:24:02.968"/>
+</kw>
+<msg timestamp="20230316 21:24:02.980" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    MobileTestLibrary.Capture Page Screenshot
+    WebApplicationTestLibrary.Capture Page Screenshot</msg>
+<msg timestamp="20230316 21:24:02.987" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at getResponseForW3CError (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</msg>
+<msg timestamp="20230316 21:24:02.995" level="DEBUG">Traceback (most recent call last):
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "d:\FusionTestFramework\src\MobileTestLibrary\ExtendedAppiumLibrary.py", line 449, in start_activity
+    super().start_activity(appPackage, appActivity, **opts)
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "d:\FusionTestFramework\src\MobileTestLibrary\ExtendedAppiumLibrary.py", line 449, in start_activity
+    super().start_activity(appPackage, appActivity, **opts)
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\AppiumLibrary\keywords\_android_utils.py", line 154, in start_activity
+    driver.start_activity(app_package=appPackage, app_activity=appActivity, **data)
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\appium\webdriver\extensions\android\activities.py", line 59, in start_activity
+    self.execute(Command.START_ACTIVITY, data)
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\appium\webdriver\errorhandler.py", line 30, in check_response
+    raise wde
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "c:\ProgramData\robocorp\ht\1d92a2f_b1f3c24_09529949\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at getResponseForW3CError (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</msg>
+<status status="FAIL" starttime="20230316 21:24:01.796" endtime="20230316 21:24:02.996"/>
+</kw>
+<kw name="Open Browser" library="WebApplicationTestLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<arg>Chrome</arg>
+<arg>executable_path= D:\Robocrop_Fusion\drivers\chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20230316 21:24:02.997" endtime="20230316 21:24:02.998"/>
+</kw>
+<kw name="Maximize Browser Window" library="WebApplicationTestLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230316 21:24:03.000" endtime="20230316 21:24:03.001"/>
+</kw>
+<status status="FAIL" starttime="20230316 21:24:01.795" endtime="20230316 21:24:03.002"/>
+</kw>
+<kw name="tap on generated link" library="launch_flow_keywords">
+<status status="NOT RUN" starttime="20230316 21:24:03.008" endtime="20230316 21:24:03.008"/>
+</kw>
+<kw name="tap on 'google play store' button" library="launch_flow_keywords">
+<status status="NOT RUN" starttime="20230316 21:24:03.009" endtime="20230316 21:24:03.010"/>
+</kw>
+<kw name="verify user is landed on 'google playstore' on vision app page" library="launch_flow_keywords">
+<status status="NOT RUN" starttime="20230316 21:24:03.014" endtime="20230316 21:24:03.015"/>
+</kw>
+<kw name="Verify if Need Help? page opens up after tapping Need Help? link from landing page" library="launch_flow_keywords">
+<status status="NOT RUN" starttime="20230316 21:24:03.018" endtime="20230316 21:24:03.019"/>
+</kw>
+<kw name="Verify if &quot;Contact Us&quot;, &quot;How to check Android version&quot; , &quot;Privacy Policy&quot; and &quot;Terms of User Agreement&quot; option are provided on Need help page" library="launch_flow_keywords">
+<status status="NOT RUN" starttime="20230316 21:24:03.022" endtime="20230316 21:24:03.023"/>
+</kw>
+<kw name="tap on 'Contact us' and verify user is landing on contact us page" library="launch_flow_keywords">
+<status status="NOT RUN" starttime="20230316 21:24:03.026" endtime="20230316 21:24:03.027"/>
+</kw>
+<kw name="tap on 'How to check Android version' and verify user is landing on 'How to check Android version' page" library="launch_flow_keywords">
+<status status="NOT RUN" starttime="20230316 21:24:03.033" endtime="20230316 21:24:03.036"/>
+</kw>
+<kw name="tap on 'Terms of Use Agreement' and verify user is landing on Terms of Use Agreement page" library="launch_flow_keywords">
+<status status="NOT RUN" starttime="20230316 21:24:03.039" endtime="20230316 21:24:03.040"/>
+</kw>
+<kw name="close Test application" library="Setup keywords" type="TEARDOWN">
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Close Application</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close Application" library="MobileTestLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<msg timestamp="20230316 21:24:03.114" level="DEBUG">Closing application with session id 59f33cba-f2b6-48a1-a4e9-24ac9a90dcda</msg>
+<msg timestamp="20230316 21:24:03.119" level="DEBUG">DELETE http://localhost:4723/wd/hub/session/59f33cba-f2b6-48a1-a4e9-24ac9a90dcda {}</msg>
+<msg timestamp="20230316 21:24:04.236" level="DEBUG">http://localhost:4723 "DELETE /wd/hub/session/59f33cba-f2b6-48a1-a4e9-24ac9a90dcda HTTP/1.1" 200 14</msg>
+<msg timestamp="20230316 21:24:04.237" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 16 Mar 2023 15:54:04 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20230316 21:24:04.238" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20230316 21:24:03.053" endtime="20230316 21:24:04.239"/>
+</kw>
+<status status="PASS" starttime="20230316 21:24:03.051" endtime="20230316 21:24:04.239"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>WebApplicationTestLibrary.Close Browser</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close Browser" library="WebApplicationTestLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230316 21:24:04.241" endtime="20230316 21:24:04.242"/>
+</kw>
+<status status="PASS" starttime="20230316 21:24:04.240" endtime="20230316 21:24:04.242"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>WebApplicationTestLibrary.Close All Browsers</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close All Browsers" library="WebApplicationTestLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<msg timestamp="20230316 21:24:04.244" level="DEBUG">Closing all browsers.</msg>
+<status status="PASS" starttime="20230316 21:24:04.243" endtime="20230316 21:24:04.244"/>
+</kw>
+<status status="PASS" starttime="20230316 21:24:04.243" endtime="20230316 21:24:04.244"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Close All Applications</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close All Applications" library="MobileTestLibrary">
+<doc>Closes all open applications.</doc>
+<msg timestamp="20230316 21:24:04.257" level="DEBUG">Closing all applications</msg>
+<status status="PASS" starttime="20230316 21:24:04.245" endtime="20230316 21:24:04.258"/>
+</kw>
+<status status="PASS" starttime="20230316 21:24:04.245" endtime="20230316 21:24:04.258"/>
+</kw>
+<status status="PASS" starttime="20230316 21:24:03.046" endtime="20230316 21:24:04.259"/>
+</kw>
+<doc>Verification that Google Play button redirecting user to Vision Project on play store</doc>
+<tag>regression</tag>
+<status status="FAIL" starttime="20230316 21:23:35.025" endtime="20230316 21:24:04.279">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at getResponseForW3CError (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</test>
+<kw name="tearDown" library="Setup keywords" type="TEARDOWN">
+<kw name="Stop Appium Service" library="MobileTestLibrary">
+<status status="PASS" starttime="20230316 21:24:04.300" endtime="20230316 21:24:04.302"/>
+</kw>
+<status status="PASS" starttime="20230316 21:24:04.298" endtime="20230316 21:24:04.302"/>
+</kw>
+<status status="FAIL" starttime="20230316 21:23:28.993" endtime="20230316 21:24:04.303"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">regression</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC003 - Verify that Google Play button redirecting user to Vision Project on play store">TC003 - Verify that Google Play button redirecting user to Vision Project on play store</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230316 21:23:33.375" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(&lt;urllib3.connection.HTTPConnection object at 0x0000021B900BB340&gt;, 'Connection to 127.0.0.1 timed out. (connect timeout=1.0)')': /wd/hub/status</msg>
+<msg timestamp="20230316 21:23:34.391" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(&lt;urllib3.connection.HTTPConnection object at 0x0000021B901997F0&gt;, 'Connection to 127.0.0.1 timed out. (connect timeout=1.0)')': /wd/hub/status</msg>
+<msg timestamp="20230316 21:24:02.947" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    MobileTestLibrary.Capture Page Screenshot
+    WebApplicationTestLibrary.Capture Page Screenshot</msg>
+<msg timestamp="20230316 21:24:02.963" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    MobileTestLibrary.Capture Page Screenshot
+    WebApplicationTestLibrary.Capture Page Screenshot</msg>
+<msg timestamp="20230316 21:24:02.980" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    MobileTestLibrary.Capture Page Screenshot
+    WebApplicationTestLibrary.Capture Page Screenshot</msg>
+</errors>
+</robot>

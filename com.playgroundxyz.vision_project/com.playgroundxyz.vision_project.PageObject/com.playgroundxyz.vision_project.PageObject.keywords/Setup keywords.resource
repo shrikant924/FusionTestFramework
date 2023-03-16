@@ -9,7 +9,7 @@ Variables       ../../com.playgroundxyz.vision_project.ConfigFiles/configuration
 Setup before suit start
     MobileTestLibrary.Start Appium Service
     Set Log Level    DEBUG
-    Log To Console    Appium server started .....
+    #Log To Console    Appium server started .....
 
 tearDown
     MobileTestLibrary.Stop Appium Service

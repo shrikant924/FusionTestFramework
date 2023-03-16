@@ -1,5 +1,3 @@
-
-
 from WebApplicationTestLibrary.SeleniumUtils import SeleniumUtils
 
 

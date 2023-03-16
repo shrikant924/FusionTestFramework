@@ -1,6 +1,6 @@
 *** Settings ***
 Library    ../../../FusionTestFramework/src/DBTestExtendedLibrary.py
-Library    ../../../FusionTestFramework/src/APITestExtendedLibrary.py    
+Library    ../../../FusionTestFramework/src/APITestExtendedLibrary.py
 
 
 *** Test Cases ***
@@ -10,4 +10,5 @@ Testcase001
      FOR    ${element}    IN    @{get}
          Log To Console  ${element}     
      END
-  
+
+
