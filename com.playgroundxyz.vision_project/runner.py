@@ -12,7 +12,7 @@ def runTest():
     try:
         # run('../FusionTestFramework/com.playgroundxyz.vision_project/com.playgroundxyz.vision_project.TestcaseSuite', outputdir=reportDirectory , splitlog=True )
         with open('stdout.txt', 'w') as stdout:
-            run('../FusionTestFramework/com.playgroundxyz.vision_project/com.playgroundxyz.vision_project.TestcaseSuite/', outputdir=reportDirectory , splitlog=True, name='Example', log=None , stdout=stdout , dryrun=False)
+            run('../FusionTestFramework/com.playgroundxyz.vision_project/com.playgroundxyz.vision_project.TestcaseSuite/', outputdir=reportDirectory , splitlog=True, name='com.playgroundxyz.vision_project', log=None , stdout=stdout , dryrun=True)
     except:
         print("File not found ....")
 

@@ -107,5 +107,5 @@ tap on 'OPEN STUDY IN APP' button
 
 verify link is pasted in textbox
     MobileTestLibrary.Wait Until Element Is Visible    ${Study link textbox}
-    ${pastedlink} =    MobileTestLibrary.Get Text2    ${Study link textbox}
+    ${pastedlink} =    MobileTestLibrary.Get Text    ${Study link textbox}
     Should Be Equal As Strings    ${SlicedStudyLink}    ${pastedlink}
