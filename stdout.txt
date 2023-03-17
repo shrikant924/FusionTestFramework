@@ -48,5 +48,5 @@ com.playgroundxyz.vision_project.TC006 - APITest Sample testcase      | PASS |
 com.playgroundxyz.vision_project                                      | PASS |
 7 tests, 7 passed, 0 failed
 ==============================================================================
-Output:  D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestResults\17-03-23_18-50-57\output.xml
-Report:  D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestResults\17-03-23_18-50-57\report.html
+Output:  D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestResults\17-03-23_19-53-31\output.xml
+Report:  D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestResults\17-03-23_19-53-31\report.html
