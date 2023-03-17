@@ -1,9 +1,9 @@
 *** Settings ***
-Resource        ../../com.playgroundxyz.vision_project.PageObject/com.playgroundxyz.vision_project.PageObject.locators/Locators.resource
-Resource        ../../com.playgroundxyz.vision_project.PageObject/com.playgroundxyz.vision_project.PageObject.keywords/welcome page journey keywords.resource
-Resource        ../../com.playgroundxyz.vision_project.PageObject/com.playgroundxyz.vision_project.PageObject.keywords/Allow Permission page keywords.resource
-Library         ../../../../FusionTestFramework/src/MobileTestLibrary/
+Library         ../../../src/MobileTestLibrary/
 Variables       ../../com.playgroundxyz.vision_project.ConfigFiles/configuration.py
+Resource        ../com.playgroundxyz.vision_project.PageObject.locators/Locators.resource
+Resource        welcome page journey keywords.resource
+Resource        Allow Permission page keywords.resource
 
 
 *** Keywords ***

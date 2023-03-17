@@ -1,7 +1,8 @@
 *** Settings ***
-Resource        ../../com.playgroundxyz.vision_project.PageObject/com.playgroundxyz.vision_project.PageObject.locators/Locators.resource
-Library         ../../../../FusionTestFramework/src/MobileTestLibrary/
+Resource        ../com.playgroundxyz.vision_project.PageObject.locators/Locators.resource
+Library         ../../../src/MobileTestLibrary/
 Variables       ../../com.playgroundxyz.vision_project.ConfigFiles/configuration.py
+
 
 *** Keywords ***
 Tap on 'help icon'

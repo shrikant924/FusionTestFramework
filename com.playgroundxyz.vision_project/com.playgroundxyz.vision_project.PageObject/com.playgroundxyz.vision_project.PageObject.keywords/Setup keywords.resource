@@ -1,7 +1,7 @@
 *** Settings ***
-Resource        ../../com.playgroundxyz.vision_project.PageObject/com.playgroundxyz.vision_project.PageObject.locators/Locators.resource
-Library         ../../../../FusionTestFramework/src/MobileTestLibrary/
-Library         ../../../../FusionTestFramework/src/WebApplicationTestLibrary/
+Library         ../../../src/MobileTestLibrary/
+Library         ../../../src/WebApplicationTestLibrary/
+Resource        ../com.playgroundxyz.vision_project.PageObject.locators/Locators.resource
 Variables       ../../com.playgroundxyz.vision_project.ConfigFiles/configuration.py
 
 

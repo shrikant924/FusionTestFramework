@@ -1,8 +1,8 @@
 *** Settings ***
-Resource        ../com.playgroundxyz.vision_project.PageObject.locators/Camera app locators.resource
-Resource        ../com.playgroundxyz.vision_project.PageObject.locators/Need Help page locators.resource
-Resource        ../com.playgroundxyz.vision_project.PageObject.locators/study page locators.resource
-Resource        ../com.playgroundxyz.vision_project.PageObject.locators/welcome Page Locators.resource
-Resource        ../com.playgroundxyz.vision_project.PageObject.locators/Allow permission page locators.resource
-Resource        ../com.playgroundxyz.vision_project.PageObject.locators/LetsSetupYourEyeTrackingLocators.resource
-Resource        ../com.playgroundxyz.vision_project.PageObject.locators/EyeGazeValiidationpageLocators.resource
+Resource    Camera app locators.resource
+Resource    Need Help page locators.resource
+Resource    study page locators.resource
+Resource    welcome Page Locators.resource
+Resource    Allow permission page locators.resource
+Resource    LetsSetupYourEyeTrackingLocators.resource
+Resource    EyeGazeValiidationpageLocators.resource

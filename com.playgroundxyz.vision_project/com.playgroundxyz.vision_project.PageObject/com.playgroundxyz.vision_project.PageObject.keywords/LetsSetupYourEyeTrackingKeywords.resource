@@ -1,7 +1,7 @@
 *** Settings ***
-Resource        ../../com.playgroundxyz.vision_project.PageObject/com.playgroundxyz.vision_project.PageObject.locators/Locators.resource
-Resource        ../../com.playgroundxyz.vision_project.PageObject/com.playgroundxyz.vision_project.PageObject.keywords/Allow Permission page keywords.resource
-Library         ../../../../FusionTestFramework/src/MobileTestLibrary/
+Resource        ../com.playgroundxyz.vision_project.PageObject.locators/Locators.resource
+Resource        Allow Permission page keywords.resource
+Library         ../../../src/MobileTestLibrary/
 Variables       ../../com.playgroundxyz.vision_project.ConfigFiles/configuration.py
 
 
