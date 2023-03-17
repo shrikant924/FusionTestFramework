@@ -1,18 +1,52 @@
 ==============================================================================
-Example                                                                       
+com.playgroundxyz.vision_project                                              
 ==============================================================================
-Example.TC001 - Tap on 'Privacy policy' and verify user is landing on Priva...
+com.playgroundxyz.vision_project.TC001 - Tap on 'Privacy policy' and verify...
 ==============================================================================
-Tap on 'Privacy policy' and verify user is landing on Privacy poli... | FAIL |
-WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
-Stacktrace:
-UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.google.android.GoogleCamera' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.android.camera.CameraLauncher' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
-    at getResponseForW3CError (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\ZMO-WIN-ShrikantL-01\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+Tap on 'Privacy policy' and verify user is landing on Privacy poli... | PASS |
 ------------------------------------------------------------------------------
-Example.TC001 - Tap on 'Privacy policy' and verify user is landing... | FAIL |
-1 test, 0 passed, 1 failed
+com.playgroundxyz.vision_project.TC001 - Tap on 'Privacy policy' a... | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Example.TC002 - Verify that Deep link URL is providing QR code                
+com.playgroundxyz.vision_project.TC002 - Verify that Deep link URL is provi...
 ==============================================================================
-Verify that Deep link URL is providing QR code :: verification of ... 
+Verify that Deep link URL is providing QR code :: verification of ... | PASS |
+------------------------------------------------------------------------------
+com.playgroundxyz.vision_project.TC002 - Verify that Deep link URL... | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+com.playgroundxyz.vision_project.TC003 - Verify that Google Play button red...
+==============================================================================
+Verify that Google Play button redirecting user to Vision Project ... | PASS |
+------------------------------------------------------------------------------
+com.playgroundxyz.vision_project.TC003 - Verify that Google Play b... | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+com.playgroundxyz.vision_project.TC004 - Verify that if social app is not i...
+==============================================================================
+Verify that if social app is not installed on phone then App was n... | PASS |
+------------------------------------------------------------------------------
+com.playgroundxyz.vision_project.TC004 - Verify that if social app... | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+com.playgroundxyz.vision_project.TC005 - Verify welcome page journey is as ...
+==============================================================================
+Verify that user is able to paste study link using Paste study lin... | PASS |
+------------------------------------------------------------------------------
+Verify that Help page open up when user taps on help icon"?" :: Ve... | PASS |
+------------------------------------------------------------------------------
+com.playgroundxyz.vision_project.TC005 - Verify welcome page journ... | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+com.playgroundxyz.vision_project.TC006 - APITest Sample testcase              
+==============================================================================
+Testcase001                                                           | PASS |
+------------------------------------------------------------------------------
+com.playgroundxyz.vision_project.TC006 - APITest Sample testcase      | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+com.playgroundxyz.vision_project                                      | PASS |
+7 tests, 7 passed, 0 failed
+==============================================================================
+Output:  D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestResults\17-03-23_18-50-57\output.xml
+Report:  D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestResults\17-03-23_18-50-57\report.html

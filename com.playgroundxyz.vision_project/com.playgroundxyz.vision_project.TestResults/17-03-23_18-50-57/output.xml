@@ -1,0 +1,2560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230317 18:50:57.961" rpa="false" schemaversion="3">
+<suite id="s1" name="com.playgroundxyz.vision_project" source="D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestcaseSuite">
+<suite id="s1-s1" name="TC001 - Tap on 'Privacy policy' and verify user is landing on Privacy policy page" source="D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestcaseSuite\TC001 - Tap on 'Privacy policy' and verify user is landing on Privacy policy page.robot">
+<kw name="Setup before suit start" library="Setup keywords" type="SETUP">
+<kw name="Start Appium Service" library="MobileTestLibrary">
+<status status="NOT RUN" starttime="20230317 18:50:59.027" endtime="20230317 18:50:59.027"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>DEBUG</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.027" endtime="20230317 18:50:59.027"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.023" endtime="20230317 18:50:59.027"/>
+</kw>
+<test id="s1-s1-t1" name="Tap on 'Privacy policy' and verify user is landing on Privacy policy page" line="11">
+<kw name="Launch Test application" library="Setup keywords" type="SETUP">
+<kw name="Open Application" library="MobileTestLibrary">
+<arg>${remote_url}</arg>
+<arg>&amp;{device}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.029" endtime="20230317 18:50:59.029"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>DEBUG</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.029" endtime="20230317 18:50:59.029"/>
+</kw>
+<kw name="Set Appium Timeout" library="MobileTestLibrary">
+<arg>30</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.029" endtime="20230317 18:50:59.029"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.029" endtime="20230317 18:50:59.029"/>
+</kw>
+<kw name="launch camera app and wait until user scan the QR code from study link url" library="launch_flow_keywords">
+<kw name="Start Activity" library="MobileTestLibrary">
+<arg>com.google.android.GoogleCamera</arg>
+<arg>com.android.camera.CameraLauncher</arg>
+<doc>Opens an arbitrary activity during a test. If the activity belongs to
+another application, that application is started and the activity is opened.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.029" endtime="20230317 18:50:59.029"/>
+</kw>
+<kw name="Open Browser" library="WebApplicationTestLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<arg>Chrome</arg>
+<arg>executable_path= D:\Robocrop_Fusion\drivers\chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.029" endtime="20230317 18:50:59.029"/>
+</kw>
+<kw name="Maximize Browser Window" library="WebApplicationTestLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.029" endtime="20230317 18:50:59.029"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.029" endtime="20230317 18:50:59.029"/>
+</kw>
+<kw name="tap on generated link" library="launch_flow_keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${camera_smartchip_text}</arg>
+<arg>timeout= 300</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.029" endtime="20230317 18:50:59.029"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${camera_smartchip_text}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.029" endtime="20230317 18:50:59.029"/>
+</kw>
+<kw name="Close Browser" library="WebApplicationTestLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.029" endtime="20230317 18:50:59.037"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${google_playstore_Button}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.037" endtime="20230317 18:50:59.037"/>
+</kw>
+<kw name="Get Text From Index" library="MobileTestLibrary">
+<var>${SlicedStudyLink}</var>
+<arg>${url}</arg>
+<arg>42</arg>
+<arg>78</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.037" endtime="20230317 18:50:59.037"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${SlicedStudyLink}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.037" endtime="20230317 18:50:59.037"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${SlicedStudyLink}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.037" endtime="20230317 18:50:59.039"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.029" endtime="20230317 18:50:59.039"/>
+</kw>
+<kw name="tap on 'google play store' button" library="launch_flow_keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${google_playstore_Button}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.039"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${google_playstore_Button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.039"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.039"/>
+</kw>
+<kw name="verify user is landed on 'google playstore' on vision app page" library="launch_flow_keywords">
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Google Play</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.039"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Vision Project</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.039"/>
+</kw>
+<kw name="Go Back" library="MobileTestLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.039"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.039"/>
+</kw>
+<kw name="Verify if Need Help? page opens up after tapping Need Help? link from landing page" library="launch_flow_keywords">
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Need Help</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.039"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Need_Help}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.039"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.039"/>
+</kw>
+<kw name="tap on 'Privacy policy' and verify user is landing on Privacy policy page" library="launch_flow_keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Privacy policy}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.039"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Privacy policy}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.039"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>MobileTestLibrary.Wait Until Element Is Visible</arg>
+<arg>${accept cookies}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${accept cookies}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.047" endtime="20230317 18:50:59.047"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.047" endtime="20230317 18:50:59.047"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>MobileTestLibrary.Click Element</arg>
+<arg>${accept cookies}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${accept cookies}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.047" endtime="20230317 18:50:59.047"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.047" endtime="20230317 18:50:59.047"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.049"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Log To Console" library="BuiltIn">
+<arg>cookies already accepted by the user</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</branch>
+<status status="PASS" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.049"/>
+</try>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Privacy Policy</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Read Privacy Policy Btn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>In this Privacy Policy, 'us' 'we' or 'our' means PLAYGROUND XYZ HOLDINGS</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>In this Privacy Policy, 'us' 'we' or 'our' means PLAYGROUND XYZ HOLDINGS PTY LTD (ABN 76 607 526 027) and our related bodies PLAYGROUND XYZ AUSTRALIA PTY LTD (ABN 42 607 532 365), PLAYGROUND XYZ IP PTY LTD (ABN 66 607 532 025), PLAYGROUND XYZ EMEA LTD (UK Company No. 10802474), PLAYGROUND XYZ ASIA PTE. LTD. (SG Registration No. 201809380E) and PLAYGROUND XYZ NORTH AMERICA CORP (EIN 36-4922580). We are committed to respecting your privacy.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</kw>
+<kw name="Scroll To Element By Exact Text" library="MobileTestLibrary">
+<arg>Read Privacy Policy for California Residents</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Read Privacy Policy for California Residents Btn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Playground XYZ Holdings Pty. Ltd., Playground XYZ Australia Pty. Ltd.</arg>
+<arg>timeout=15</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Playground XYZ Holdings Pty. Ltd., Playground XYZ Australia Pty. Ltd., Playground XYZ IP Pty. Ltd., Playground XYZ EMEA Ltd., Playground XYZ Asia Pte. Ltd. and Playground XYZ North America Corp. and their affiliates (collectively,“[COMPANY],” “we,” “us,” or “our”) adopts this Privacy Statement to comply with the California Consumer Privacy Act of 2018 (“CCPA”) and other California privacy laws. This Privacy Statement applies solely to visitors, users, and others who reside in the State of California (“consumers,” “you,” or “your”).</arg>
+<arg>This Privacy Statement explains our privacy practices and your rights regarding the collection, use, and disclosure of your personal information.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</kw>
+<kw name="Go Back" library="MobileTestLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</kw>
+<kw name="Go Back" library="MobileTestLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</kw>
+<kw name="Go Back" library="MobileTestLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.039" endtime="20230317 18:50:59.049"/>
+</kw>
+<kw name="close Test application" library="Setup keywords" type="TEARDOWN">
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Close Application</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close Application" library="MobileTestLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.049"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>WebApplicationTestLibrary.Close Browser</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close Browser" library="WebApplicationTestLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.057"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.057"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>WebApplicationTestLibrary.Close All Browsers</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close All Browsers" library="WebApplicationTestLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.057" endtime="20230317 18:50:59.057"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.057" endtime="20230317 18:50:59.057"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Close All Applications</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close All Applications" library="MobileTestLibrary">
+<doc>Closes all open applications.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.059" endtime="20230317 18:50:59.059"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.057" endtime="20230317 18:50:59.059"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.049" endtime="20230317 18:50:59.059"/>
+</kw>
+<doc>Verification that Google Play button redirecting user to Vision Project on play store</doc>
+<tag>regression</tag>
+<status status="PASS" starttime="20230317 18:50:59.027" endtime="20230317 18:50:59.059"/>
+</test>
+<kw name="tearDown" library="Setup keywords" type="TEARDOWN">
+<kw name="Stop Appium Service" library="MobileTestLibrary">
+<status status="NOT RUN" starttime="20230317 18:50:59.059" endtime="20230317 18:50:59.059"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.059" endtime="20230317 18:50:59.059"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:58.011" endtime="20230317 18:50:59.059"/>
+</suite>
+<suite id="s1-s2" name="TC002 - Verify that Deep link URL is providing QR code" source="D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestcaseSuite\TC002 - Verify that Deep link URL is providing QR code.robot">
+<test id="s1-s2-t1" name="Verify that Deep link URL is providing QR code" line="9">
+<kw name="Launch browser and input url" library="Setup keywords" type="SETUP">
+<kw name="Open Browser" library="WebApplicationTestLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<arg>executable_path=drivers/chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.119" endtime="20230317 18:50:59.119"/>
+</kw>
+<kw name="Maximize Browser Window" library="WebApplicationTestLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.119" endtime="20230317 18:50:59.119"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.119" endtime="20230317 18:50:59.119"/>
+</kw>
+<kw name="wait until QR code generated and validate QR code link details and log to console" library="QR_Code_page_keywords">
+<kw name="Wait Until Page Contains" library="WebApplicationTestLibrary">
+<arg>Study cannot be conducted here</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.119" endtime="20230317 18:50:59.119"/>
+</kw>
+<kw name="Element Should Be Visible" library="WebApplicationTestLibrary">
+<arg>${QR_Code}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.119" endtime="20230317 18:50:59.119"/>
+</kw>
+<kw name="Capture Element Screenshot" library="WebApplicationTestLibrary">
+<var>${captured_img}</var>
+<arg>${QR_Code}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.119" endtime="20230317 18:50:59.119"/>
+</kw>
+<kw name="Scan QR Code" library="WebApplicationTestLibrary">
+<var>${QRCodedata}</var>
+<arg>${captured_img}</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.119" endtime="20230317 18:50:59.119"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${QRCodedata}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.119" endtime="20230317 18:50:59.119"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.119" endtime="20230317 18:50:59.119"/>
+</kw>
+<kw name="Close Browser" library="WebApplicationTestLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.119" endtime="20230317 18:50:59.119"/>
+</kw>
+<doc>verification of barcode generation of specified link</doc>
+<tag>regression</tag>
+<status status="PASS" starttime="20230317 18:50:59.119" endtime="20230317 18:50:59.119"/>
+</test>
+<status status="PASS" starttime="20230317 18:50:59.059" endtime="20230317 18:50:59.128"/>
+</suite>
+<suite id="s1-s3" name="TC003 - Verify that Google Play button redirecting user to Vision Project on play store" source="D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestcaseSuite\TC003 - Verify that Google Play button redirecting user to Vision Project on play store.robot">
+<kw name="Setup before suit start" library="Setup keywords" type="SETUP">
+<kw name="Start Appium Service" library="MobileTestLibrary">
+<status status="NOT RUN" starttime="20230317 18:50:59.180" endtime="20230317 18:50:59.180"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>DEBUG</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.180" endtime="20230317 18:50:59.180"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.180" endtime="20230317 18:50:59.180"/>
+</kw>
+<test id="s1-s3-t1" name="Verify that Google Play button redirecting user to Vision Project on play store" line="11">
+<kw name="Launch Test application" library="Setup keywords" type="SETUP">
+<kw name="Open Application" library="MobileTestLibrary">
+<arg>${remote_url}</arg>
+<arg>&amp;{device}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.180" endtime="20230317 18:50:59.180"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>DEBUG</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.180" endtime="20230317 18:50:59.180"/>
+</kw>
+<kw name="Set Appium Timeout" library="MobileTestLibrary">
+<arg>30</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.180" endtime="20230317 18:50:59.180"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.180" endtime="20230317 18:50:59.180"/>
+</kw>
+<kw name="launch camera app and wait until user scan the QR code from study link url" library="launch_flow_keywords">
+<kw name="Start Activity" library="MobileTestLibrary">
+<arg>com.google.android.GoogleCamera</arg>
+<arg>com.android.camera.CameraLauncher</arg>
+<doc>Opens an arbitrary activity during a test. If the activity belongs to
+another application, that application is started and the activity is opened.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.180" endtime="20230317 18:50:59.180"/>
+</kw>
+<kw name="Open Browser" library="WebApplicationTestLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<arg>Chrome</arg>
+<arg>executable_path= D:\Robocrop_Fusion\drivers\chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.180" endtime="20230317 18:50:59.188"/>
+</kw>
+<kw name="Maximize Browser Window" library="WebApplicationTestLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.188" endtime="20230317 18:50:59.188"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.180" endtime="20230317 18:50:59.188"/>
+</kw>
+<kw name="tap on generated link" library="launch_flow_keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${camera_smartchip_text}</arg>
+<arg>timeout= 300</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.188" endtime="20230317 18:50:59.188"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${camera_smartchip_text}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<kw name="Close Browser" library="WebApplicationTestLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${google_playstore_Button}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<kw name="Get Text From Index" library="MobileTestLibrary">
+<var>${SlicedStudyLink}</var>
+<arg>${url}</arg>
+<arg>42</arg>
+<arg>78</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${SlicedStudyLink}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${SlicedStudyLink}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.188" endtime="20230317 18:50:59.190"/>
+</kw>
+<kw name="tap on 'google play store' button" library="launch_flow_keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${google_playstore_Button}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${google_playstore_Button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<kw name="verify user is landed on 'google playstore' on vision app page" library="launch_flow_keywords">
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Google Play</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Vision Project</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<kw name="Go Back" library="MobileTestLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<kw name="Verify if Need Help? page opens up after tapping Need Help? link from landing page" library="launch_flow_keywords">
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Need Help</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Need_Help}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.190" endtime="20230317 18:50:59.190"/>
+</kw>
+<kw name="Verify if &quot;Contact Us&quot;, &quot;How to check Android version&quot; , &quot;Privacy Policy&quot; and &quot;Terms of User Agreement&quot; option are provided on Need help page" library="launch_flow_keywords">
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Contact us</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.199" endtime="20230317 18:50:59.199"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Contact us</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.199" endtime="20230317 18:50:59.199"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>How to check Android version</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.199" endtime="20230317 18:50:59.200"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Privacy policy</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.200" endtime="20230317 18:50:59.200"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Terms of Use Agreement</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.200" endtime="20230317 18:50:59.200"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.198" endtime="20230317 18:50:59.201"/>
+</kw>
+<kw name="tap on 'Contact us' and verify user is landing on contact us page" library="launch_flow_keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${contact us}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.201" endtime="20230317 18:50:59.201"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${contact us}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.201" endtime="20230317 18:50:59.201"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Contact us</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.201" endtime="20230317 18:50:59.201"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>If you need help or have any questions or feedback, please send an email to the following address. We will get back to you within 1 business day.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.201" endtime="20230317 18:50:59.201"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>support@vision-project.co</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.201" endtime="20230317 18:50:59.201"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Go Back Button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.201" endtime="20230317 18:50:59.201"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.201" endtime="20230317 18:50:59.201"/>
+</kw>
+<kw name="tap on 'How to check Android version' and verify user is landing on 'How to check Android version' page" library="launch_flow_keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${How to check Android version}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.201" endtime="20230317 18:50:59.201"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${How to check Android version}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.201" endtime="20230317 18:50:59.201"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>How to check Android version</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.201" endtime="20230317 18:50:59.201"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Go Back Button}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.201" endtime="20230317 18:50:59.201"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Go Back Button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.201" endtime="20230317 18:50:59.201"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.201" endtime="20230317 18:50:59.201"/>
+</kw>
+<kw name="tap on 'Terms of Use Agreement' and verify user is landing on Terms of Use Agreement page" library="launch_flow_keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Terms of Use Agreement}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.208" endtime="20230317 18:50:59.208"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Terms of Use Agreement}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.208" endtime="20230317 18:50:59.208"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Vision Project Terms of Use Agreement</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.208" endtime="20230317 18:50:59.210"/>
+</kw>
+<kw name="Scroll To Element By Exact Text" library="MobileTestLibrary">
+<arg>19. Electronic Signatures</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.210" endtime="20230317 18:50:59.210"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>19. Electronic Signatures</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.210" endtime="20230317 18:50:59.210"/>
+</kw>
+<kw name="Go Back" library="MobileTestLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.210" endtime="20230317 18:50:59.210"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.208" endtime="20230317 18:50:59.210"/>
+</kw>
+<kw name="close Test application" library="Setup keywords" type="TEARDOWN">
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Close Application</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close Application" library="MobileTestLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.210" endtime="20230317 18:50:59.210"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.210" endtime="20230317 18:50:59.210"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>WebApplicationTestLibrary.Close Browser</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close Browser" library="WebApplicationTestLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.210" endtime="20230317 18:50:59.210"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.210" endtime="20230317 18:50:59.210"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>WebApplicationTestLibrary.Close All Browsers</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close All Browsers" library="WebApplicationTestLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.210" endtime="20230317 18:50:59.210"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.210" endtime="20230317 18:50:59.210"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Close All Applications</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close All Applications" library="MobileTestLibrary">
+<doc>Closes all open applications.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.210" endtime="20230317 18:50:59.210"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.210" endtime="20230317 18:50:59.210"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.210" endtime="20230317 18:50:59.210"/>
+</kw>
+<doc>Verification that Google Play button redirecting user to Vision Project on play store</doc>
+<tag>regression</tag>
+<status status="PASS" starttime="20230317 18:50:59.180" endtime="20230317 18:50:59.210"/>
+</test>
+<kw name="tearDown" library="Setup keywords" type="TEARDOWN">
+<kw name="Stop Appium Service" library="MobileTestLibrary">
+<status status="NOT RUN" starttime="20230317 18:50:59.210" endtime="20230317 18:50:59.210"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.210" endtime="20230317 18:50:59.210"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.129" endtime="20230317 18:50:59.218"/>
+</suite>
+<suite id="s1-s4" name="TC004 - Verify that if social app is not installed on phone then App was not found screen appears" source="D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestcaseSuite\TC004 - Verify that if social app is not installed on phone then App was not found screen appears.robot">
+<kw name="Setup before suit start" library="Setup keywords" type="SETUP">
+<kw name="Start Appium Service" library="MobileTestLibrary">
+<status status="NOT RUN" starttime="20230317 18:50:59.279" endtime="20230317 18:50:59.279"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>DEBUG</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.279" endtime="20230317 18:50:59.280"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.278" endtime="20230317 18:50:59.280"/>
+</kw>
+<test id="s1-s4-t1" name="Verify that if social app is not installed on phone then App was not found screen appears" line="11">
+<kw name="Launch Test application" library="Setup keywords" type="SETUP">
+<kw name="Open Application" library="MobileTestLibrary">
+<arg>${remote_url}</arg>
+<arg>&amp;{device}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.281" endtime="20230317 18:50:59.281"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>DEBUG</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.281" endtime="20230317 18:50:59.281"/>
+</kw>
+<kw name="Set Appium Timeout" library="MobileTestLibrary">
+<arg>30</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.281" endtime="20230317 18:50:59.281"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.281" endtime="20230317 18:50:59.281"/>
+</kw>
+<kw name="launch camera app and wait until user scan the QR code from study link url" library="launch_flow_keywords">
+<kw name="Start Activity" library="MobileTestLibrary">
+<arg>com.google.android.GoogleCamera</arg>
+<arg>com.android.camera.CameraLauncher</arg>
+<doc>Opens an arbitrary activity during a test. If the activity belongs to
+another application, that application is started and the activity is opened.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.281" endtime="20230317 18:50:59.281"/>
+</kw>
+<kw name="Open Browser" library="WebApplicationTestLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<arg>Chrome</arg>
+<arg>executable_path= D:\Robocrop_Fusion\drivers\chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.281" endtime="20230317 18:50:59.281"/>
+</kw>
+<kw name="Maximize Browser Window" library="WebApplicationTestLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.281" endtime="20230317 18:50:59.281"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.281" endtime="20230317 18:50:59.281"/>
+</kw>
+<kw name="tap on generated link" library="launch_flow_keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${camera_smartchip_text}</arg>
+<arg>timeout= 300</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.281" endtime="20230317 18:50:59.281"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${camera_smartchip_text}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.281" endtime="20230317 18:50:59.281"/>
+</kw>
+<kw name="Close Browser" library="WebApplicationTestLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.281" endtime="20230317 18:50:59.281"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${google_playstore_Button}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.289" endtime="20230317 18:50:59.289"/>
+</kw>
+<kw name="Get Text From Index" library="MobileTestLibrary">
+<var>${SlicedStudyLink}</var>
+<arg>${url}</arg>
+<arg>42</arg>
+<arg>78</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.289" endtime="20230317 18:50:59.290"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${SlicedStudyLink}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.290" endtime="20230317 18:50:59.290"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${SlicedStudyLink}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.291" endtime="20230317 18:50:59.291"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.281" endtime="20230317 18:50:59.291"/>
+</kw>
+<kw name="tap on 'OPEN STUDY IN APP' button" library="launch_flow_keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Open Study In app}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.292" endtime="20230317 18:50:59.292"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Open Study In app}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.292" endtime="20230317 18:50:59.292"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.291" endtime="20230317 18:50:59.292"/>
+</kw>
+<kw name="verify link is pasted in textbox" library="launch_flow_keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Study link textbox}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.292" endtime="20230317 18:50:59.292"/>
+</kw>
+<kw name="Get Text" library="MobileTestLibrary">
+<var>${pastedlink}</var>
+<arg>${Study link textbox}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.292" endtime="20230317 18:50:59.292"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${SlicedStudyLink}</arg>
+<arg>${pastedlink}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.292" endtime="20230317 18:50:59.292"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.292" endtime="20230317 18:50:59.292"/>
+</kw>
+<kw name="Verify that user can start study by hitting Get Started button" library="launch_flow_keywords">
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${GET STARTED}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.292" endtime="20230317 18:50:59.292"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${GET STARTED}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.292" endtime="20230317 18:50:59.292"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${About the study}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.292" endtime="20230317 18:50:59.292"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${BEGIN Button}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.292" endtime="20230317 18:50:59.292"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.292" endtime="20230317 18:50:59.292"/>
+</kw>
+<kw name="tap on 'BEGIN' button" library="welcome page journey keywords">
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${BEGIN Button}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.299" endtime="20230317 18:50:59.299"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.299" endtime="20230317 18:50:59.299"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.299" endtime="20230317 18:50:59.299"/>
+</kw>
+<kw name="Verify help page getting displayed to the user with 'contact us' , 'Eye tracking tips' , 'privacy' ..." library="welcome page journey keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.301" endtime="20230317 18:50:59.301"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Contact us}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.301" endtime="20230317 18:50:59.301"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Eye tracking tips}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.301" endtime="20230317 18:50:59.301"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Privacy}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.301" endtime="20230317 18:50:59.301"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Terms of Use Agreement}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.301" endtime="20230317 18:50:59.301"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision How to check Android version}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.301" endtime="20230317 18:50:59.301"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision How to recover completion code}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.301" endtime="20230317 18:50:59.301"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.301" endtime="20230317 18:50:59.301"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.301" endtime="20230317 18:50:59.301"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${BEGIN Button}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.301" endtime="20230317 18:50:59.301"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${BEGIN Button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.301" endtime="20230317 18:50:59.301"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.292" endtime="20230317 18:50:59.301"/>
+</kw>
+<kw name="read 'privacy Notice'" library="welcome page journey keywords">
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Privacy Notice</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.301" endtime="20230317 18:50:59.301"/>
+</kw>
+<kw name="Scroll To Element By Exact Text In LongView" library="MobileTestLibrary">
+<arg>www.playground.xyz/privacy/</arg>
+<arg>30</arg>
+<doc>element : give exact text of elements
+MaxSwapCount : Input how many times you have to swap to find element</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.301" endtime="20230317 18:50:59.301"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.301" endtime="20230317 18:50:59.301"/>
+</kw>
+<kw name="accept 'privacy Notice'" library="welcome page journey keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${PrivacyNoticeCheckbox}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.309" endtime="20230317 18:50:59.309"/>
+</kw>
+<kw name="Wait Until Element Gets Enabled" library="MobileTestLibrary">
+<arg>${PrivacyNoticeCheckbox}</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.309" endtime="20230317 18:50:59.309"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${PrivacyNoticeCheckbox}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.309" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.309" endtime="20230317 18:50:59.317"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${TermsOfUseCheckbox}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.317" endtime="20230317 18:50:59.319"/>
+</kw>
+<kw name="Click Element At Coordinates" library="MobileTestLibrary">
+<arg>112</arg>
+<arg>1459</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use other keywords.</doc>
+<msg timestamp="20230317 18:50:59.319" level="WARN">Keyword 'MobileTestLibrary.Click Element At Coordinates' is deprecated. Since selenium v4, use other keywords.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.319" endtime="20230317 18:50:59.321"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${acceptBtn}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.321" endtime="20230317 18:50:59.321"/>
+</kw>
+<kw name="Wait Until Element Gets Enabled" library="MobileTestLibrary">
+<arg>${acceptBtn}</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.321" endtime="20230317 18:50:59.321"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${acceptBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.321" endtime="20230317 18:50:59.321"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Track your gaze</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.321" endtime="20230317 18:50:59.321"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.309" endtime="20230317 18:50:59.321"/>
+</kw>
+<kw name="Verify help icon is working as excepted" library="Allow Permission page keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.321" endtime="20230317 18:50:59.321"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.321" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.321" endtime="20230317 18:50:59.327"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.327" endtime="20230317 18:50:59.327"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.329" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.329" endtime="20230317 18:50:59.331"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.321" endtime="20230317 18:50:59.331"/>
+</kw>
+<kw name="Allow camera access" library="Allow Permission page keywords">
+<try>
+<branch type="TRY">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${ALLOW CAMERA ACCESS}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.331" endtime="20230317 18:50:59.331"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${ALLOW CAMERA ACCESS}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.331" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.331" endtime="20230317 18:50:59.334"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Allow While using the app}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.334" endtime="20230317 18:50:59.334"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Allow onlyThisTime}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.334" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.334" endtime="20230317 18:50:59.349"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Screen recording</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.349" endtime="20230317 18:50:59.350"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.334" endtime="20230317 18:50:59.350"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Log To Console" library="BuiltIn">
+<arg>allowed camera permission</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.350" endtime="20230317 18:50:59.350"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.350" endtime="20230317 18:50:59.350"/>
+</branch>
+<status status="PASS" starttime="20230317 18:50:59.334" endtime="20230317 18:50:59.350"/>
+</try>
+<status status="PASS" starttime="20230317 18:50:59.331" endtime="20230317 18:50:59.351"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>You have previously allowed our app usage access.</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.352" endtime="20230317 18:50:59.352"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${continueBtn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.352" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.352" endtime="20230317 18:50:59.392"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Screen recording</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.392" endtime="20230317 18:50:59.392"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.351" endtime="20230317 18:50:59.393"/>
+</branch>
+<status status="PASS" starttime="20230317 18:50:59.331" endtime="20230317 18:50:59.393"/>
+</try>
+<status status="PASS" starttime="20230317 18:50:59.331" endtime="20230317 18:50:59.393"/>
+</kw>
+<kw name="Verify help icon is working as excepted" library="Allow Permission page keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.394" endtime="20230317 18:50:59.394"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.394" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.394" endtime="20230317 18:50:59.397"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.398" endtime="20230317 18:50:59.398"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.398" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.398" endtime="20230317 18:50:59.401"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.393" endtime="20230317 18:50:59.402"/>
+</kw>
+<kw name="Allow Screen recording" library="Allow Permission page keywords">
+<try>
+<branch type="TRY">
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Ensure sensitive information such as passwords, messages or payment details are not visible when recording is on.</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.403" endtime="20230317 18:50:59.403"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${ALLOW ScreenRecording}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.403" endtime="20230317 18:50:59.403"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${ALLOW ScreenRecording}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.403" endtime="20230317 18:50:59.403"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Start recording or casting with Vision Project?</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.403" endtime="20230317 18:50:59.403"/>
+</kw>
+<kw name="Click Element At Coordinates" library="MobileTestLibrary">
+<arg>845</arg>
+<arg>1540</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use other keywords.</doc>
+<msg timestamp="20230317 18:50:59.403" level="WARN">Keyword 'MobileTestLibrary.Click Element At Coordinates' is deprecated. Since selenium v4, use other keywords.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.403" endtime="20230317 18:50:59.408"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>You have previously allowed our app usage access.</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.408" endtime="20230317 18:50:59.408"/>
+</kw>
+<kw name="Verify help icon is working as excepted" library="Allow Permission page keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.411" endtime="20230317 18:50:59.411"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.411" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.411" endtime="20230317 18:50:59.414"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.414" endtime="20230317 18:50:59.416"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.417" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.416" endtime="20230317 18:50:59.435"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.408" endtime="20230317 18:50:59.435"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${continueBtn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.435" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.435" endtime="20230317 18:50:59.455"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>You have previously allowed our app to appear on top.</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.456" endtime="20230317 18:50:59.457"/>
+</kw>
+<kw name="Verify help icon is working as excepted" library="Allow Permission page keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.458" endtime="20230317 18:50:59.458"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.458" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.458" endtime="20230317 18:50:59.461"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.462" endtime="20230317 18:50:59.463"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.463" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.463" endtime="20230317 18:50:59.465"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.458" endtime="20230317 18:50:59.465"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${continueBtn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.465" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.465" endtime="20230317 18:50:59.472"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.403" endtime="20230317 18:50:59.472"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>You have previously allowed our app usage access.</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.473" endtime="20230317 18:50:59.473"/>
+</kw>
+<kw name="Verify help icon is working as excepted" library="Allow Permission page keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.474" endtime="20230317 18:50:59.475"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.475" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.475" endtime="20230317 18:50:59.477"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.477" endtime="20230317 18:50:59.477"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.477" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.477" endtime="20230317 18:50:59.483"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.473" endtime="20230317 18:50:59.483"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${continueBtn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.485" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.484" endtime="20230317 18:50:59.488"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>You have previously allowed our app to appear on top.</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.488" endtime="20230317 18:50:59.488"/>
+</kw>
+<kw name="Verify help icon is working as excepted" library="Allow Permission page keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.488" endtime="20230317 18:50:59.488"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.488" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.488" endtime="20230317 18:50:59.493"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.494" endtime="20230317 18:50:59.494"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.495" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.494" endtime="20230317 18:50:59.500"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.488" endtime="20230317 18:50:59.501"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${continueBtn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.502" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.502" endtime="20230317 18:50:59.507"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.472" endtime="20230317 18:50:59.507"/>
+</branch>
+<status status="PASS" starttime="20230317 18:50:59.403" endtime="20230317 18:50:59.507"/>
+</try>
+<status status="PASS" starttime="20230317 18:50:59.403" endtime="20230317 18:50:59.507"/>
+</kw>
+<kw name="Read and accept set up your eye tracking tips" library="LetsSetupYourEyeTrackingKeywords">
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${LetsSetupYourEyeTrackingPage title}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.507" endtime="20230317 18:50:59.507"/>
+</kw>
+<kw name="Verify help icon is working as excepted" library="Allow Permission page keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.507" endtime="20230317 18:50:59.507"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.507" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.507" endtime="20230317 18:50:59.513"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.514" endtime="20230317 18:50:59.515"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.515" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.515" endtime="20230317 18:50:59.520"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.507" endtime="20230317 18:50:59.520"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${LetsSetupYourEyeTrackingPage title}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.520" endtime="20230317 18:50:59.522"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${LetsSetupYourEyeTrackingPage checkBox1}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.522" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.522" endtime="20230317 18:50:59.525"/>
+</kw>
+<kw name="Wait Until Element Gets Enabled" library="MobileTestLibrary">
+<arg>${LetsSetupYourEyeTrackingPage checkBox1}</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.526" endtime="20230317 18:50:59.526"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${LetsSetupYourEyeTrackingPage checkBox2}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.526" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.526" endtime="20230317 18:50:59.529"/>
+</kw>
+<kw name="Wait Until Element Gets Enabled" library="MobileTestLibrary">
+<arg>${LetsSetupYourEyeTrackingPage checkBox2}</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.529" endtime="20230317 18:50:59.529"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${LetsSetupYourEyeTrackingPage checkBox3}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.531" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.531" endtime="20230317 18:50:59.532"/>
+</kw>
+<kw name="Wait Until Element Gets Enabled" library="MobileTestLibrary">
+<arg>${LetsSetupYourEyeTrackingPage checkBox3}</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.533" endtime="20230317 18:50:59.533"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${LetsSetupYourEyeTrackingPage checkBox4}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.534" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.534" endtime="20230317 18:50:59.538"/>
+</kw>
+<kw name="Wait Until Element Gets Enabled" library="MobileTestLibrary">
+<arg>${LetsSetupYourEyeTrackingPage checkBox4}</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.539" endtime="20230317 18:50:59.539"/>
+</kw>
+<kw name="Wait Until Element Gets Enabled" library="MobileTestLibrary">
+<arg>${LetsSetupYourEyeTrackingPage SetupBtn}</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.539" endtime="20230317 18:50:59.539"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${LetsSetupYourEyeTrackingPage SetupBtn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.539" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.539" endtime="20230317 18:50:59.542"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Look at the dot until it goes green and disappears</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.542" endtime="20230317 18:50:59.542"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.507" endtime="20230317 18:50:59.543"/>
+</kw>
+<kw name="Need to Manual Input here 'Look at the dot until it goes green and disappears'" library="EyeGazeValiidationKeywords">
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>${EyeGazeValiidation titleText}</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.544" endtime="20230317 18:50:59.544"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${EyeGazeValiidation BeginBtn}</arg>
+<arg>timeout=300</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.545" endtime="20230317 18:50:59.545"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Repeat five times. The dots will appear in random places.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.545" endtime="20230317 18:50:59.545"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${EyeGazeValiidation BeginBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.546" endtime="20230317 18:50:59.546"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Just a few more to go</arg>
+<arg>timeout=300</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.547" endtime="20230317 18:50:59.547"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Great job so far! Keep going. The dots will go green and disappear once the accuracy is validated.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.548" endtime="20230317 18:50:59.548"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${EyeGazeValiidation ContinueToAccuracyCheckBtn}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.548" endtime="20230317 18:50:59.548"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${EyeGazeValiidation ContinueToAccuracyCheckBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.549" endtime="20230317 18:50:59.549"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Verify 'Accuracy needs to be improved' screen getting displayed if user fails to validate accuracy" library="EyeGazeValiidationKeywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${tryAgainBtn}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.553" endtime="20230317 18:50:59.553"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Try not to let your eyes wander during the accuracy check.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.553" endtime="20230317 18:50:59.553"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Accuracy needs to be improved</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.555" endtime="20230317 18:50:59.555"/>
+</kw>
+<kw name="Verify help icon is working as excepted" library="Allow Permission page keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.555" endtime="20230317 18:50:59.555"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.555" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.555" endtime="20230317 18:50:59.560"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.560" endtime="20230317 18:50:59.560"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.560" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.560" endtime="20230317 18:50:59.564"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.555" endtime="20230317 18:50:59.564"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${AccuracyNeedsToBeImproved NeedHelpBtn}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.565" endtime="20230317 18:50:59.565"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${AccuracyNeedsToBeImproved NeedHelpBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.566" endtime="20230317 18:50:59.566"/>
+</kw>
+<kw name="Verify help page getting displayed to the user with 'contact us' , 'Eye tracking tips' , 'privacy' ..." library="welcome page journey keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.569" endtime="20230317 18:50:59.569"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Contact us}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.569" endtime="20230317 18:50:59.569"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Eye tracking tips}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.569" endtime="20230317 18:50:59.569"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Privacy}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.569" endtime="20230317 18:50:59.569"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Terms of Use Agreement}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.569" endtime="20230317 18:50:59.573"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision How to check Android version}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.573" endtime="20230317 18:50:59.573"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision How to recover completion code}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.573" endtime="20230317 18:50:59.573"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.566" endtime="20230317 18:50:59.573"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.576" endtime="20230317 18:50:59.576"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${AccuracyNeedsToBeImproved NeedHelpBtn}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.576" endtime="20230317 18:50:59.576"/>
+</kw>
+<kw name="Swipe By Percent" library="MobileTestLibrary">
+<arg>80</arg>
+<arg>50</arg>
+<arg>20</arg>
+<arg>50</arg>
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.576" endtime="20230317 18:50:59.576"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Sit upright at a</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.576" endtime="20230317 18:50:59.576"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Sit upright at a desk or a table in a well-lit place.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.576" endtime="20230317 18:50:59.576"/>
+</kw>
+<kw name="Swipe By Percent" library="MobileTestLibrary">
+<arg>80</arg>
+<arg>50</arg>
+<arg>20</arg>
+<arg>50</arg>
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.576" endtime="20230317 18:50:59.576"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Avoid windows and mirrors</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.576" endtime="20230317 18:50:59.576"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Avoid windows and mirrors (wearing your glasses is fine).</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.576" endtime="20230317 18:50:59.576"/>
+</kw>
+<kw name="Swipe By Percent" library="MobileTestLibrary">
+<arg>80</arg>
+<arg>50</arg>
+<arg>20</arg>
+<arg>50</arg>
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.576" endtime="20230317 18:50:59.576"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Keep your head</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.576" endtime="20230317 18:50:59.581"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Keep your head and phone still while looking at the dots.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.582" endtime="20230317 18:50:59.583"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${tryAgainBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.583" endtime="20230317 18:50:59.584"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${EyeGazeValiidation ContinueToAccuracyCheckBtn}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.584" endtime="20230317 18:50:59.586"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${EyeGazeValiidation ContinueToAccuracyCheckBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.586" endtime="20230317 18:50:59.586"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.550" endtime="20230317 18:50:59.587"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.550" endtime="20230317 18:50:59.587"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Log To Console" library="BuiltIn">
+<arg>"Accuracy is good"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.587" endtime="20230317 18:50:59.587"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.587" endtime="20230317 18:50:59.587"/>
+</branch>
+<status status="PASS" starttime="20230317 18:50:59.549" endtime="20230317 18:50:59.587"/>
+</try>
+<status status="PASS" starttime="20230317 18:50:59.543" endtime="20230317 18:50:59.587"/>
+</kw>
+<kw name="verify 'Well done! The eye tracking setup is complete' screen getting displayed after validation of EYE gaze" library="EyeGazeValiidationKeywords">
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>You will have accuracy checks</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.587" endtime="20230317 18:50:59.587"/>
+</kw>
+<kw name="Verify help icon is working as excepted" library="Allow Permission page keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.587" endtime="20230317 18:50:59.587"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.587" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.587" endtime="20230317 18:50:59.594"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.596" endtime="20230317 18:50:59.597"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.597" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.597" endtime="20230317 18:50:59.598"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.587" endtime="20230317 18:50:59.599"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>You will have accuracy checks every 1 minutes during your browsing session to maintain the accuracy of our eye tracking.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.600" endtime="20230317 18:50:59.600"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${BEGIN Button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.601" endtime="20230317 18:50:59.601"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.587" endtime="20230317 18:50:59.601"/>
+</kw>
+<kw name="Verify 'You are ready to begin the study' screen getting displayed" library="EyeGazeValiidationKeywords">
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>You are ready to begin the study</arg>
+<arg>timeout=300</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.603" endtime="20230317 18:50:59.603"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Your mission is to browse the content of the Facebook app on your phone until 5 minutes elapse.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.604" endtime="20230317 18:50:59.604"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Browse the FEED, REELS or STORIES content in portrait mode only</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.604" endtime="20230317 18:50:59.605"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Please keep the Vision Project app open in the background while you browse.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.605" endtime="20230317 18:50:59.605"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>The Vision Project app will record your screen while you browse.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.605" endtime="20230317 18:50:59.606"/>
+</kw>
+<kw name="Verify help icon is working as excepted" library="Allow Permission page keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.607" endtime="20230317 18:50:59.607"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.607" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.607" endtime="20230317 18:50:59.641"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.641" endtime="20230317 18:50:59.642"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.642" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.642" endtime="20230317 18:50:59.720"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.606" endtime="20230317 18:50:59.721"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.602" endtime="20230317 18:50:59.721"/>
+</kw>
+<kw name="Tap on 'View A Quick Demo' Button" library="EyeGazeValiidationKeywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${ViewAQuickDemoBtn}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.721" endtime="20230317 18:50:59.721"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${ViewAQuickDemoBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.721" endtime="20230317 18:50:59.721"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.721" endtime="20230317 18:50:59.721"/>
+</kw>
+<kw name="Verify study instructions and tap on 'START STUDY' button" library="EyeGazeValiidationKeywords">
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Study instructions</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.725" endtime="20230317 18:50:59.725"/>
+</kw>
+<kw name="Verify help icon is working as excepted" library="Allow Permission page keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.727" endtime="20230317 18:50:59.727"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.727" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.727" endtime="20230317 18:50:59.750"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.750" endtime="20230317 18:50:59.751"/>
+</kw>
+<kw name="Tap" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230317 18:50:59.754" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="NOT RUN" starttime="20230317 18:50:59.753" endtime="20230317 18:50:59.757"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.725" endtime="20230317 18:50:59.757"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>You will see a floating timer with the time remaining and the status of the recording in the top right corner of the screen.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.757" endtime="20230317 18:50:59.757"/>
+</kw>
+<kw name="Swipe By Percent" library="MobileTestLibrary">
+<arg>80</arg>
+<arg>50</arg>
+<arg>20</arg>
+<arg>50</arg>
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.765" endtime="20230317 18:50:59.765"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>When it is time</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.765" endtime="20230317 18:50:59.765"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>When it is time to return to the Vision Project app for an eye tracking accuracy check, the notification will pop up. Please act according to the instructions in the notification. The study will be paused until the action is taken.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.765" endtime="20230317 18:50:59.765"/>
+</kw>
+<kw name="Swipe By Percent" library="MobileTestLibrary">
+<arg>80</arg>
+<arg>50</arg>
+<arg>20</arg>
+<arg>50</arg>
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.765" endtime="20230317 18:50:59.776"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>When the browsing</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.777" endtime="20230317 18:50:59.777"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>When the browsing session is complete you will see a notification like this. Please act according to the instructions in the notification.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.777" endtime="20230317 18:50:59.777"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${studyInstructions StartStudyBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.779" endtime="20230317 18:50:59.779"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.721" endtime="20230317 18:50:59.779"/>
+</kw>
+<kw name="close Test application" library="Setup keywords" type="TEARDOWN">
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Close Application</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close Application" library="MobileTestLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.779" endtime="20230317 18:50:59.779"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.779" endtime="20230317 18:50:59.779"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>WebApplicationTestLibrary.Close Browser</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close Browser" library="WebApplicationTestLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.779" endtime="20230317 18:50:59.779"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.779" endtime="20230317 18:50:59.779"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>WebApplicationTestLibrary.Close All Browsers</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close All Browsers" library="WebApplicationTestLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.779" endtime="20230317 18:50:59.779"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.779" endtime="20230317 18:50:59.779"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Close All Applications</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close All Applications" library="MobileTestLibrary">
+<doc>Closes all open applications.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.789" endtime="20230317 18:50:59.789"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.789" endtime="20230317 18:50:59.789"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.779" endtime="20230317 18:50:59.789"/>
+</kw>
+<doc>Verification that if social app is not installed on phone then App was not found screen appears</doc>
+<tag>smoke</tag>
+<status status="PASS" starttime="20230317 18:50:59.280" endtime="20230317 18:50:59.789"/>
+</test>
+<kw name="tearDown" library="Setup keywords" type="TEARDOWN">
+<kw name="Stop Appium Service" library="MobileTestLibrary">
+<status status="NOT RUN" starttime="20230317 18:50:59.789" endtime="20230317 18:50:59.789"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.789" endtime="20230317 18:50:59.789"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.220" endtime="20230317 18:50:59.789"/>
+</suite>
+<suite id="s1-s5" name="TC005 - Verify welcome page journey is as excepted" source="D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestcaseSuite\TC005 - Verify welcome page journey is as excepted.robot">
+<kw name="Setup before suit start" library="Setup keywords" type="SETUP">
+<kw name="Start Appium Service" library="MobileTestLibrary">
+<status status="NOT RUN" starttime="20230317 18:50:59.892" endtime="20230317 18:50:59.892"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>DEBUG</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.892" endtime="20230317 18:50:59.892"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.892" endtime="20230317 18:50:59.892"/>
+</kw>
+<test id="s1-s5-t1" name="Verify that user is able to paste study link using Paste study link" line="11">
+<kw name="Launch Test application" library="Setup keywords" type="SETUP">
+<kw name="Open Application" library="MobileTestLibrary">
+<arg>${remote_url}</arg>
+<arg>&amp;{device}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.899" endtime="20230317 18:50:59.899"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>DEBUG</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.899" endtime="20230317 18:50:59.901"/>
+</kw>
+<kw name="Set Appium Timeout" library="MobileTestLibrary">
+<arg>30</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.901" endtime="20230317 18:50:59.901"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.899" endtime="20230317 18:50:59.901"/>
+</kw>
+<kw name="launch camera app and wait until user scan the QR code from study link url" library="launch_flow_keywords">
+<kw name="Start Activity" library="MobileTestLibrary">
+<arg>com.google.android.GoogleCamera</arg>
+<arg>com.android.camera.CameraLauncher</arg>
+<doc>Opens an arbitrary activity during a test. If the activity belongs to
+another application, that application is started and the activity is opened.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.901" endtime="20230317 18:50:59.901"/>
+</kw>
+<kw name="Open Browser" library="WebApplicationTestLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<arg>Chrome</arg>
+<arg>executable_path= D:\Robocrop_Fusion\drivers\chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.901" endtime="20230317 18:50:59.901"/>
+</kw>
+<kw name="Maximize Browser Window" library="WebApplicationTestLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.901" endtime="20230317 18:50:59.901"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.901" endtime="20230317 18:50:59.901"/>
+</kw>
+<kw name="tap on generated link" library="launch_flow_keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${camera_smartchip_text}</arg>
+<arg>timeout= 300</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.901" endtime="20230317 18:50:59.901"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${camera_smartchip_text}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.901" endtime="20230317 18:50:59.901"/>
+</kw>
+<kw name="Close Browser" library="WebApplicationTestLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.901" endtime="20230317 18:50:59.901"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${google_playstore_Button}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.901" endtime="20230317 18:50:59.901"/>
+</kw>
+<kw name="Get Text From Index" library="MobileTestLibrary">
+<var>${SlicedStudyLink}</var>
+<arg>${url}</arg>
+<arg>42</arg>
+<arg>78</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.901" endtime="20230317 18:50:59.901"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${SlicedStudyLink}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.901" endtime="20230317 18:50:59.901"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${SlicedStudyLink}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.911" endtime="20230317 18:50:59.911"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.901" endtime="20230317 18:50:59.912"/>
+</kw>
+<kw name="tap on 'OPEN STUDY IN APP' button" library="launch_flow_keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Open Study In app}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.913" endtime="20230317 18:50:59.913"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Open Study In app}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.913" endtime="20230317 18:50:59.913"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.912" endtime="20230317 18:50:59.913"/>
+</kw>
+<kw name="verify link is pasted in textbox" library="launch_flow_keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Study link textbox}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.913" endtime="20230317 18:50:59.913"/>
+</kw>
+<kw name="Get Text" library="MobileTestLibrary">
+<var>${pastedlink}</var>
+<arg>${Study link textbox}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.913" endtime="20230317 18:50:59.913"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${SlicedStudyLink}</arg>
+<arg>${pastedlink}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.913" endtime="20230317 18:50:59.913"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.913" endtime="20230317 18:50:59.913"/>
+</kw>
+<kw name="Verify that user can start study by hitting Get Started button" library="launch_flow_keywords">
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${GET STARTED}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.913" endtime="20230317 18:50:59.913"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${GET STARTED}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.913" endtime="20230317 18:50:59.921"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${About the study}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.921" endtime="20230317 18:50:59.921"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${BEGIN Button}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.921" endtime="20230317 18:50:59.921"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.913" endtime="20230317 18:50:59.921"/>
+</kw>
+<kw name="close Test application" library="Setup keywords" type="TEARDOWN">
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Close Application</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close Application" library="MobileTestLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.923" endtime="20230317 18:50:59.923"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.923" endtime="20230317 18:50:59.923"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>WebApplicationTestLibrary.Close Browser</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close Browser" library="WebApplicationTestLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.925" endtime="20230317 18:50:59.925"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.923" endtime="20230317 18:50:59.925"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>WebApplicationTestLibrary.Close All Browsers</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close All Browsers" library="WebApplicationTestLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.925" endtime="20230317 18:50:59.926"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.925" endtime="20230317 18:50:59.927"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Close All Applications</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close All Applications" library="MobileTestLibrary">
+<doc>Closes all open applications.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.927" endtime="20230317 18:50:59.927"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.927" endtime="20230317 18:50:59.927"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.923" endtime="20230317 18:50:59.927"/>
+</kw>
+<doc>Verification that user is able to paste study link using Paste study link</doc>
+<tag>regression</tag>
+<status status="PASS" starttime="20230317 18:50:59.892" endtime="20230317 18:50:59.927"/>
+</test>
+<test id="s1-s5-t2" name="Verify that Help page open up when user taps on help icon&quot;?&quot;" line="21">
+<kw name="Launch Test application" library="Setup keywords" type="SETUP">
+<kw name="Open Application" library="MobileTestLibrary">
+<arg>${remote_url}</arg>
+<arg>&amp;{device}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.931" endtime="20230317 18:50:59.931"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>DEBUG</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.931" endtime="20230317 18:50:59.931"/>
+</kw>
+<kw name="Set Appium Timeout" library="MobileTestLibrary">
+<arg>30</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.931" endtime="20230317 18:50:59.931"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.927" endtime="20230317 18:50:59.933"/>
+</kw>
+<kw name="Tap on 'help icon'" library="welcome page journey keywords">
+<kw name="Start Activity" library="MobileTestLibrary">
+<arg>com.playgroundxyz.vision_project</arg>
+<arg>.MainActivity</arg>
+<doc>Opens an arbitrary activity during a test. If the activity belongs to
+another application, that application is started and the activity is opened.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.933" endtime="20230317 18:50:59.933"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.933" endtime="20230317 18:50:59.933"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Help icon}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.933" endtime="20230317 18:50:59.933"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.933" endtime="20230317 18:50:59.933"/>
+</kw>
+<kw name="Verify help page getting displayed to the user with 'contact us' , 'Eye tracking tips' , 'privacy' ..." library="welcome page journey keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.933" endtime="20230317 18:50:59.933"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Contact us}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.933" endtime="20230317 18:50:59.939"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Eye tracking tips}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.939" endtime="20230317 18:50:59.939"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Privacy}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.940" endtime="20230317 18:50:59.940"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Terms of Use Agreement}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.941" endtime="20230317 18:50:59.941"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision How to check Android version}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.941" endtime="20230317 18:50:59.942"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision How to recover completion code}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.942" endtime="20230317 18:50:59.942"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.933" endtime="20230317 18:50:59.943"/>
+</kw>
+<kw name="verify app version should be as excepted" library="welcome page journey keywords">
+<kw name="Get Text" library="MobileTestLibrary">
+<var>${APP_VERSION}</var>
+<arg>${Native vision App version}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.943" endtime="20230317 18:50:59.944"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${APP_VERSION}</arg>
+<arg>${currentAppVersion}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.944" endtime="20230317 18:50:59.945"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.943" endtime="20230317 18:50:59.945"/>
+</kw>
+<kw name="Verify on tapping on 'Contact us' and verify user is landing on contact us page" library="welcome page journey keywords">
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>${Native vision Contact us}</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.948" endtime="20230317 18:50:59.948"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision Contact us}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.948" endtime="20230317 18:50:59.949"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Contact us</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.949" endtime="20230317 18:50:59.949"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>If you need help or have any questions or feedback, please send an email to the following address. We will get back to you within 1 business day.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.949" endtime="20230317 18:50:59.949"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>support@vision-project.co</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.949" endtime="20230317 18:50:59.949"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.949" endtime="20230317 18:50:59.951"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.945" endtime="20230317 18:50:59.951"/>
+</kw>
+<kw name="Verify on tapping on 'Eye tracking tips' relevant page getting displayed" library="welcome page journey keywords">
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.952" endtime="20230317 18:50:59.953"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision Eye tracking tips}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.953" endtime="20230317 18:50:59.953"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision Eye tracking tips}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.954" endtime="20230317 18:50:59.954"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Eye tracking tips</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.954" endtime="20230317 18:50:59.954"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Keep your head and phone still while looking at the dots during the eye tracking setup.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.954" endtime="20230317 18:50:59.954"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Sit upright at a desk or a table in a well-lit place.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.954" endtime="20230317 18:50:59.954"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Avoid windows and mirrors (wearing your glasses is fine).</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.954" endtime="20230317 18:50:59.954"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Make sure your phone’s battery is above 50%.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.954" endtime="20230317 18:50:59.954"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.954" endtime="20230317 18:50:59.954"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.954" endtime="20230317 18:50:59.954"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.952" endtime="20230317 18:50:59.954"/>
+</kw>
+<kw name="Verify on tapping on 'Privacy' relevant page getting displayed" library="welcome page journey keywords">
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${Native vision Privacy}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.954" endtime="20230317 18:50:59.954"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision Privacy}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.954" endtime="20230317 18:50:59.954"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${policy page Privacy policy Btn}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.954" endtime="20230317 18:50:59.954"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Privacy</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.954" endtime="20230317 18:50:59.954"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Your data rights</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.954" endtime="20230317 18:50:59.954"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.961" endtime="20230317 18:50:59.961"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${policy page Privacy policy Btn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.961" endtime="20230317 18:50:59.961"/>
+</kw>
+<kw name="Go Back" library="MobileTestLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.961" endtime="20230317 18:50:59.961"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="MobileTestLibrary">
+<arg>${policy page Your data rights Btn}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.961" endtime="20230317 18:50:59.961"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${policy page Your data rights Btn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.961" endtime="20230317 18:50:59.963"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Your data rights</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.963" endtime="20230317 18:50:59.964"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>If you would like to delete your data, please send an email with the study link to the following address.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.964" endtime="20230317 18:50:59.964"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>privacy@playgroundxyz.com</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.965" endtime="20230317 18:50:59.965"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.965" endtime="20230317 18:50:59.965"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Privacy</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.965" endtime="20230317 18:50:59.965"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.965" endtime="20230317 18:50:59.965"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.954" endtime="20230317 18:50:59.965"/>
+</kw>
+<kw name="Verify on tapping on 'Terms of Use Agreement' relevant page getting displayed" library="welcome page journey keywords">
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision Terms of Use Agreement}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.965" endtime="20230317 18:50:59.968"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision Terms of Use Agreement}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.968" endtime="20230317 18:50:59.968"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>Vision Project Terms of Use</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.969" endtime="20230317 18:50:59.969"/>
+</kw>
+<kw name="Scroll To Element By Exact Text" library="MobileTestLibrary">
+<arg>19. Electronic Signatures</arg>
+<status status="NOT RUN" starttime="20230317 18:50:59.969" endtime="20230317 18:50:59.969"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>19. Electronic Signatures</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.969" endtime="20230317 18:50:59.969"/>
+</kw>
+<kw name="Go Back" library="MobileTestLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.969" endtime="20230317 18:50:59.969"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.965" endtime="20230317 18:50:59.971"/>
+</kw>
+<kw name="Verify on tapping on 'How to check Android version' relevant page getting displayed" library="welcome page journey keywords">
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision How to check Android version}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.971" endtime="20230317 18:50:59.971"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision How to check Android version}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.971" endtime="20230317 18:50:59.971"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>How to check Android version</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.971" endtime="20230317 18:50:59.973"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.973" endtime="20230317 18:50:59.973"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.973" endtime="20230317 18:50:59.973"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.971" endtime="20230317 18:50:59.973"/>
+</kw>
+<kw name="Verify on tapping on 'How to recover completion code' relevant page getting displayed" library="welcome page journey keywords">
+<kw name="Wait Until Page Contains Element" library="MobileTestLibrary">
+<arg>${Native vision How to recover completion code}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.973" endtime="20230317 18:50:59.973"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision How to recover completion code}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.973" endtime="20230317 18:50:59.973"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Recover completion code</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.973" endtime="20230317 18:50:59.977"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>Please send an email with the study link to the following address and we will get back to you with completion code.</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.977" endtime="20230317 18:50:59.977"/>
+</kw>
+<kw name="Page Should Contain Text" library="MobileTestLibrary">
+<arg>support@vision-project.co</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.977" endtime="20230317 18:50:59.978"/>
+</kw>
+<kw name="Page Should Contain Element" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.978" endtime="20230317 18:50:59.978"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.978" endtime="20230317 18:50:59.978"/>
+</kw>
+<kw name="Wait Until Page Contains" library="MobileTestLibrary">
+<arg>${Native vision app Need help?}</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.978" endtime="20230317 18:50:59.978"/>
+</kw>
+<kw name="Click Element" library="MobileTestLibrary">
+<arg>${Native vision Need HelpPage Go Back Btn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.978" endtime="20230317 18:50:59.978"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.973" endtime="20230317 18:50:59.978"/>
+</kw>
+<kw name="close Test application" library="Setup keywords" type="TEARDOWN">
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Close Application</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close Application" library="MobileTestLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.981" endtime="20230317 18:50:59.981"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.978" endtime="20230317 18:50:59.981"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>WebApplicationTestLibrary.Close Browser</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close Browser" library="WebApplicationTestLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.981" endtime="20230317 18:50:59.981"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.981" endtime="20230317 18:50:59.981"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>WebApplicationTestLibrary.Close All Browsers</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close All Browsers" library="WebApplicationTestLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.983" endtime="20230317 18:50:59.983"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.983" endtime="20230317 18:50:59.983"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Close All Applications</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Close All Applications" library="MobileTestLibrary">
+<doc>Closes all open applications.</doc>
+<status status="NOT RUN" starttime="20230317 18:50:59.983" endtime="20230317 18:50:59.983"/>
+</kw>
+<status status="NOT RUN" starttime="20230317 18:50:59.983" endtime="20230317 18:50:59.983"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.978" endtime="20230317 18:50:59.983"/>
+</kw>
+<doc>Verification that Help page open up when user taps on help icon"?"</doc>
+<tag>regression</tag>
+<status status="PASS" starttime="20230317 18:50:59.927" endtime="20230317 18:50:59.983"/>
+</test>
+<kw name="tearDown" library="Setup keywords" type="TEARDOWN">
+<kw name="Stop Appium Service" library="MobileTestLibrary">
+<status status="NOT RUN" starttime="20230317 18:50:59.983" endtime="20230317 18:50:59.983"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.983" endtime="20230317 18:50:59.983"/>
+</kw>
+<status status="PASS" starttime="20230317 18:50:59.797" endtime="20230317 18:50:59.983"/>
+</suite>
+<suite id="s1-s6" name="TC006 - APITest Sample testcase" source="D:\FusionTestFramework\com.playgroundxyz.vision_project\com.playgroundxyz.vision_project.TestcaseSuite\TC006 - APITest Sample testcase.robot">
+<test id="s1-s6-t1" name="Testcase001" line="7">
+<kw name="Create Session" library="APITestExtendedLibrary">
+<arg>api</arg>
+<arg>https://jsonplaceholder.typicode.com</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="NOT RUN" starttime="20230317 18:51:00.307" endtime="20230317 18:51:00.307"/>
+</kw>
+<kw name="GET On Session" library="APITestExtendedLibrary">
+<var>${response}</var>
+<arg>api</arg>
+<arg>/users</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="NOT RUN" starttime="20230317 18:51:00.307" endtime="20230317 18:51:00.307"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230317 18:51:00.307" endtime="20230317 18:51:00.307"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230317 18:51:00.314" endtime="20230317 18:51:00.314"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${response}</arg>
+<arg>&lt;Response [200]&gt;</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20230317 18:51:00.314" endtime="20230317 18:51:00.314"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>'It is api testcase'</arg>
+<arg>format=*^100</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230317 18:51:00.315" endtime="20230317 18:51:00.315"/>
+</kw>
+<status status="PASS" starttime="20230317 18:51:00.307" endtime="20230317 18:51:00.316"/>
+</test>
+<status status="PASS" starttime="20230317 18:50:59.983" endtime="20230317 18:51:00.316"/>
+</suite>
+<status status="PASS" starttime="20230317 18:50:57.969" endtime="20230317 18:51:00.317"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="5" fail="0" skip="0">regression</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="com.playgroundxyz.vision_project">com.playgroundxyz.vision_project</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TC001 - Tap on 'Privacy policy' and verify user is landing on Privacy policy page">com.playgroundxyz.vision_project.TC001 - Tap on 'Privacy policy' and verify user is landing on Privacy policy page</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="TC002 - Verify that Deep link URL is providing QR code">com.playgroundxyz.vision_project.TC002 - Verify that Deep link URL is providing QR code</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="TC003 - Verify that Google Play button redirecting user to Vision Project on play store">com.playgroundxyz.vision_project.TC003 - Verify that Google Play button redirecting user to Vision Project on play store</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="TC004 - Verify that if social app is not installed on phone then App was not found screen appears">com.playgroundxyz.vision_project.TC004 - Verify that if social app is not installed on phone then App was not found screen appears</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s5" name="TC005 - Verify welcome page journey is as excepted">com.playgroundxyz.vision_project.TC005 - Verify welcome page journey is as excepted</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s6" name="TC006 - APITest Sample testcase">com.playgroundxyz.vision_project.TC006 - APITest Sample testcase</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230317 18:50:59.309" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.319" level="WARN">Keyword 'MobileTestLibrary.Click Element At Coordinates' is deprecated. Since selenium v4, use other keywords.</msg>
+<msg timestamp="20230317 18:50:59.321" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.329" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.331" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.334" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.352" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.394" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.398" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.403" level="WARN">Keyword 'MobileTestLibrary.Click Element At Coordinates' is deprecated. Since selenium v4, use other keywords.</msg>
+<msg timestamp="20230317 18:50:59.411" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.417" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.435" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.458" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.463" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.465" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.475" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.477" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.485" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.488" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.495" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.502" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.507" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.515" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.522" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.526" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.531" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.534" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.539" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.555" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.560" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.587" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.597" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.607" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.642" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.727" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230317 18:50:59.754" level="WARN">Keyword 'MobileTestLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+</errors>
+</robot>
