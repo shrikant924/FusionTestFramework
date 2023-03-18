@@ -1,6 +1,6 @@
 *** Settings ***
+Library         MobileTestLibrary
 Resource        ../com.playgroundxyz.vision_project.PageObject.locators/Locators.resource
-Library         ../../../src/MobileTestLibrary/
 Variables       ../../com.playgroundxyz.vision_project.ConfigFiles/configuration.py
 
 

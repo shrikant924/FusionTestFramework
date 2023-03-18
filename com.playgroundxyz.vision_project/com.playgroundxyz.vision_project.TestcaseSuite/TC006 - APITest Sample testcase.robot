@@ -1,6 +1,6 @@
 *** Settings ***
-Library     ../../../FusionTestFramework/src/DBTestExtendedLibrary.py
-Library     ../../../FusionTestFramework/src/APITestExtendedLibrary.py
+Library     DBTestExtendedLibrary.py
+Library     APITestExtendedLibrary.py
 
 
 *** Test Cases ***

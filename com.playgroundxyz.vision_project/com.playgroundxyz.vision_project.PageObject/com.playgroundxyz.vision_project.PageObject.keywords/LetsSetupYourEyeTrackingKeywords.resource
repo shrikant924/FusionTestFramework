@@ -1,7 +1,7 @@
 *** Settings ***
-Resource        ../com.playgroundxyz.vision_project.PageObject.locators/Locators.resource
+Library         MobileTestLibrary
 Resource        Allow Permission page keywords.resource
-Library         ../../../src/MobileTestLibrary/
+Resource        ../com.playgroundxyz.vision_project.PageObject.locators/Locators.resource
 Variables       ../../com.playgroundxyz.vision_project.ConfigFiles/configuration.py
 
 
