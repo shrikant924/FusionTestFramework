@@ -1,5 +1,5 @@
 *** Settings ***
-Library         MobileTestLibrary
+Library         ../../../src/MobileTestLibrary/
 Library         WebApplicationTestLibrary
 Resource        ../com.playgroundxyz.vision_project.PageObject.locators/Locators.resource
 Variables       ../../com.playgroundxyz.vision_project.ConfigFiles/configuration.py
@@ -14,6 +14,13 @@ launch camera app and wait until user scan the QR code from study link url
     ...    Chrome
     ...    executable_path= D:\Robocrop_Fusion\drivers\chromedriver.exe
     WebApplicationTestLibrary.Maximize Browser Window
+
+paste the study link in the Textfield
+    ${SlicedStudyLink} =    MobileTestLibrary.Get Text From Index    ${url}    42    78
+    MobileTestLibrary.Set Given Text ClipBoard    ${SlicedStudyLink}
+    ${cl} =     MobileTestLibrary.GetText From Clipboard
+    Log To Console         ${cl}
+    
 
 tap on generated link
     MobileTestLibrary.Wait Until Element Is Visible    ${camera_smartchip_text}    timeout= 300

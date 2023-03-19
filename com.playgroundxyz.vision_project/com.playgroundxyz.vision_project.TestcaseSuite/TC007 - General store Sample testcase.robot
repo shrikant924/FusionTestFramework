@@ -11,9 +11,13 @@ Testcase001
     MobileTestLibrary.Click Element    com.androidsample.generalstore:id/spinnerCountry
     MobileTestLibrary.Scroll To Element By Exact Text In LongView    Yemen    50
     MobileTestLibrary.click Text    Yemen
-    MobileTestLibrary.Input Text    com.androidsample.generalstore:id/nameField    shrikant
+    MobileTestLibrary.set Given Text clipBoard    shrikant lohar
+    ${Input} =  MobileTestLibrary.getText From Clipboard
+    log to console    ${Input}
+    MobileTestLibrary.Input Text    com.androidsample.generalstore:id/nameField    ${Input}
     MobileTestLibrary.Click Element    com.androidsample.generalstore:id/radioFemale
     MobileTestLibrary.Click Element    com.androidsample.generalstore:id/btnLetsShop
     MobileTestLibrary.Wait Until Page Contains    Products
     MobileTestLibrary.Page Should Contain Text    Products
     MobileTestLibrary.Stop Appium Service
+    

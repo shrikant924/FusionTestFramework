@@ -563,3 +563,20 @@ class ExtendedAppiumLibrary(AppiumLibrary):
         action.tap(elementid).perform()
         return self
 
+    @keyword
+    def set_Given_Text_clipBoard(self , text):
+        driver = self._current_application()    
+        driver.set_clipboard_text(text)
+
+    
+    @keyword
+    def getText_From_Clipboard(self):
+        driver = self._current_application() 
+        return driver.get_clipboard_text()
+    
+    
+
+        
+
+
+
