@@ -1,5 +1,5 @@
 *** Settings ***
-Library         WebApplicationTestLibrary
+Library         ../../../src/WebApplicationTestLibrary/
 Resource        ../com.playgroundxyz.vision_project.PageObject.locators/Locators.resource
 Variables       ../../com.playgroundxyz.vision_project.ConfigFiles/configuration.py
 
