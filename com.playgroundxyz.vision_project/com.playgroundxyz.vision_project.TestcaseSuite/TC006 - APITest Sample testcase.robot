@@ -1,6 +1,6 @@
 *** Settings ***
-Library     DBTestExtendedLibrary.py
-Library     APITestExtendedLibrary.py
+Library     ../../src/DBTestExtendedLibrary.py
+Library     ../../src/APITestExtendedLibrary.py
 
 
 *** Test Cases ***

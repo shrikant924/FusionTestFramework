@@ -12,9 +12,10 @@ Verify that if social app is not installed on phone then App was not found scree
     [Documentation]    Verification that if social app is not installed on phone then App was not found screen appears
     [Tags]    smoke
 
-    launch camera app and wait until user scan the QR code from study link url
-    tap on generated link
+    # launch camera app and wait until user scan the QR code from study link url
+    # tap on generated link
     tap on 'OPEN STUDY IN APP' button
+    paste the study link in the Textfield
     verify link is pasted in textbox
     Verify that user can start study by hitting Get Started button
     tap on 'BEGIN' button

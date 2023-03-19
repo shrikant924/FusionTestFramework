@@ -12,9 +12,10 @@ Verify that user is able to paste study link using Paste study link
     [Documentation]    Verification that user is able to paste study link using Paste study link
     [Tags]    regression
 
-    launch camera app and wait until user scan the QR code from study link url
-    tap on generated link
-    tap on 'OPEN STUDY IN APP' button
+    # launch camera app and wait until user scan the QR code from study link url
+    # tap on generated link
+    # tap on 'OPEN STUDY IN APP' button
+    paste the study link in the Textfield
     verify link is pasted in textbox
     Verify that user can start study by hitting Get Started button
 

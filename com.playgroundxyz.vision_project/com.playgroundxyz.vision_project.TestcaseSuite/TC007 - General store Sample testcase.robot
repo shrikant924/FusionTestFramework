@@ -1,5 +1,5 @@
 *** Settings ***
-Library     MobileTestLibrary
+Library     ../../src/MobileTestLibrary/
 Resource    ../com.playgroundxyz.vision_project.PageObject/com.playgroundxyz.vision_project.PageObject.keywords/pageObjects.resource
 
 
@@ -11,10 +11,14 @@ Testcase001
     MobileTestLibrary.Click Element    com.androidsample.generalstore:id/spinnerCountry
     MobileTestLibrary.Scroll To Element By Exact Text In LongView    Yemen    50
     MobileTestLibrary.click Text    Yemen
-    MobileTestLibrary.set Given Text clipBoard    shrikant lohar
-    ${Input} =  MobileTestLibrary.getText From Clipboard
-    log to console    ${Input}
-    MobileTestLibrary.Input Text    com.androidsample.generalstore:id/nameField    ${Input}
+    ${SlicedStudyLink} =    MobileTestLibrary.Get Text From Index    ${url}    42    78
+    MobileTestLibrary.Set Given Text ClipBoard    ${SlicedStudyLink}
+    ${cl} =     MobileTestLibrary.GetText From Clipboard
+    Log To Console         ${cl}
+    # MobileTestLibrary.set Given Text clipBoard    shrikant lohar
+    # ${Input} =  MobileTestLibrary.getText From Clipboard
+    # log to console    ${Input}
+    MobileTestLibrary.Input Text    com.androidsample.generalstore:id/nameField    ${cl}
     MobileTestLibrary.Click Element    com.androidsample.generalstore:id/radioFemale
     MobileTestLibrary.Click Element    com.androidsample.generalstore:id/btnLetsShop
     MobileTestLibrary.Wait Until Page Contains    Products

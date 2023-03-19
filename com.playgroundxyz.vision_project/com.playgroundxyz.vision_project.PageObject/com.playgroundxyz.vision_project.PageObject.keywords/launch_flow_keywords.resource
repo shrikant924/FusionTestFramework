@@ -18,8 +18,7 @@ launch camera app and wait until user scan the QR code from study link url
 paste the study link in the Textfield
     ${SlicedStudyLink} =    MobileTestLibrary.Get Text From Index    ${url}    42    78
     MobileTestLibrary.Set Given Text ClipBoard    ${SlicedStudyLink}
-    ${cl} =     MobileTestLibrary.GetText From Clipboard
-    Log To Console         ${cl}
+    MobileTestLibrary.Click Element        ${Paste study link} 
     
 
 tap on generated link

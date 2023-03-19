@@ -11,7 +11,7 @@ class SetupUtils:
     @keyword
     def start_appium_service(self):
         appiumLogFileName = datetime.now().strftime('%d-%m-%y_%H-%M-%S')
-        path = '/FusionTestFramework/Log/' + 'appiumLog_' + appiumLogFileName + '.log'
+        path = '/FusionTestFramework/AppiumLogs/' + 'appiumLog_' + appiumLogFileName + '.log'
         appium_service.start(
             args=['--address', '127.0.0.1', '-p', str(DEFAULT_PORT), '--base-path', '/wd/hub/', '--log', path ,'--log-level', 
                   'debug' ,'--local-timezone'])
