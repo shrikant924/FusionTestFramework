@@ -107,10 +107,10 @@ read 'privacy Notice'
 accept 'privacy Notice'
     MobileTestLibrary.Wait Until Element Is Visible    ${PrivacyNoticeCheckbox}
     MobileTestLibrary.Wait Until Element Gets Enabled    ${PrivacyNoticeCheckbox}
-    MobileTestLibrary.Tap    ${PrivacyNoticeCheckbox}
+    MobileTestLibrary.Click Element    ${PrivacyNoticeCheckbox}
     MobileTestLibrary.Wait Until Element Is Visible    ${TermsOfUseCheckbox}
-#    MobileTestLibrary.Tap    ${TermsOfUseCheckbox}
-    MobileTestLibrary.Click Element At Coordinates    112    1459
+    &{CheckBoxLocation} =     MobileTestLibrary.Get element location         ${TermsOfUseCheckbox}
+    MobileTestLibrary.Click Element At Coordinates    ${CheckBoxLocation}[x]    ${CheckBoxLocation}[y]
     MobileTestLibrary.Wait Until Element Is Visible    ${acceptBtn}
     MobileTestLibrary.Wait Until Element Gets Enabled    ${acceptBtn}
     MobileTestLibrary.Click Element    ${acceptBtn}
