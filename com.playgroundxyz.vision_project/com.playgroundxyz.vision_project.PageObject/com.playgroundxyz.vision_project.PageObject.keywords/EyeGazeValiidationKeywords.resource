@@ -1,6 +1,6 @@
 *** Settings ***
 Library         ../../../src/MobileTestLibrary/
-Library    Dialogs
+Library         Dialogs
 Variables       ../../com.playgroundxyz.vision_project.ConfigFiles/configuration.py
 Resource        ../com.playgroundxyz.vision_project.PageObject.locators/Locators.resource
 Resource        welcome page journey keywords.resource
@@ -11,10 +11,11 @@ Resource        Allow Permission page keywords.resource
 Need to Manual Input here 'Look at the dot until it goes green and disappears'
     MobileTestLibrary.Wait Until Page Contains    ${EyeGazeValiidation titleText}
     Dialogs.Execute Manual Step    Do you have completed Eye gaze Callibration    Failed to calibrate
-    MobileTestLibrary.Wait Until Page Contains Element    ${EyeGazeValiidation BeginBtn}    
+    MobileTestLibrary.Wait Until Page Contains Element    ${EyeGazeValiidation BeginBtn}
     MobileTestLibrary.Page Should Contain Text    Repeat five times. The dots will appear in random places.
     MobileTestLibrary.Click element    ${EyeGazeValiidation BeginBtn}
-    MobileTestLibrary.Wait Until Page Contains    Just a few more to go    timeout=300
+    Dialogs.Execute Manual Step    Do you have completed Eye gaze Callibration    Failed to calibrate
+    MobileTestLibrary.Wait Until Page Contains    Just a few more to go
     MobileTestLibrary.Page Should Contain Text
     ...    Great job so far! Keep going. The dots will go green and disappear once the accuracy is validated.
     MobileTestLibrary.Wait Until Element Is Visible    ${EyeGazeValiidation ContinueToAccuracyCheckBtn}

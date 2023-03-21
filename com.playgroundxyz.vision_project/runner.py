@@ -15,7 +15,7 @@ def runTest():
             run('../FusionTestFramework/com.playgroundxyz.vision_project/com.playgroundxyz.vision_project.TestcaseSuite/',
                 outputdir=reportDirectory, splitlog=True, name='com.playgroundxyz.vision_project', log=None, stdout=stdout, dryrun=True)
     except:
-        print("File not found ....")
+        raise FileNotFoundError
 
 
 def sendEmail():

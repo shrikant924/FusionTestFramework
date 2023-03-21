@@ -48,9 +48,9 @@
     "platformVersion": "12.0",
     "deviceName": "LBYPFQXSVCZLUGQ4",
     "automationName": "UiAutomator2",
-    "app": "app-debug-multimodel.apk",
-    "appPackage": "",
-    "appActivity": " ",
+    "app": "",
+    "appActivity": ".MainActivity",
+    "appPackage": "com.playgroundxyz.vision_project",
     "automationType": "app",
     "sessionName": "Automation test session",
     "sessionDescription": "",
@@ -62,5 +62,20 @@
     "appium-url": "http://0.0.0.0:4723/wd/hub",
     "chromedriverExecutableDir": "drivers/chromedriver.exe",
     "chromedriverUseSystemExecutable": true
+  },
+  "Pixel_6Cloud": {
+    "securityToken": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI2ZDM2NmJiNS01NDAyLTQ4MmMtYTVhOC1kODZhODk4MDYyZjIifQ.eyJpYXQiOjE2Nzk0MTU1NzgsImp0aSI6ImI3M2MxNjZlLWY2NDktNGRlYy05NTJmLWRiOTQ4MDg1ZGMzZiIsImlzcyI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsImF1ZCI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsInN1YiI6IjUzMjM0YjAxLWYxZjQtNDViYS05NjZlLWFkYzdhYjhmNTAxOCIsInR5cCI6Ik9mZmxpbmUiLCJhenAiOiJvZmZsaW5lLXRva2VuLWdlbmVyYXRvciIsIm5vbmNlIjoiODFkYmQyYjUtNWQ3Ni00MDk1LWJjMTctZWQzZDUzMjNiM2I1Iiwic2Vzc2lvbl9zdGF0ZSI6Ijk0MjM5YzBmLWFhYjMtNDQ4NS1iMjIxLWE5MTk2ODA4MTQyYSIsInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIHByb2ZpbGUgZW1haWwifQ.K2UL8A9NTfRyH3HFk0i0eDr7naTgqlgKVxi4lD_fw90",
+    "platformName": "android",
+    "platformVersion": "13.0",
+    "manufacturer": "Google",
+    "model": "Pixel 6",
+    "app": "PRIVATE:1679415197621_Vision Project_1.1.23_Apkpure.apk",
+    "enableAppiumBehavior": true,
+    "autoLaunch": true,
+    "autoInstrument": true,
+    "takesScreenshot": false,
+    "screenshotOnError": true,
+    "openDeviceTimeout": 5,
+    "appium-url": "https://trial.perfectomobile.com/nexperience/perfectomobile/wd/hub"
   }
 }

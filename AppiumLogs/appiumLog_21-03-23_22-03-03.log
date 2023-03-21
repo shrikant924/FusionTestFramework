@@ -1,0 +1,19 @@
+2023-03-21 22:03:08:426 [Appium] Welcome to Appium v1.22.3
+2023-03-21 22:03:08:429 [Appium] Non-default server args:
+2023-03-21 22:03:08:430 [Appium]   address: 127.0.0.1
+2023-03-21 22:03:08:430 [Appium]   basePath: /wd/hub/
+2023-03-21 22:03:08:431 [Appium]   logFile: /FusionTestFramework/AppiumLogs/appiumLog_21-03-23_22-03-03.log
+2023-03-21 22:03:08:431 [Appium]   localTimezone: true
+2023-03-21 22:03:08:526 [Appium] Appium REST http interface listener started on 127.0.0.1:4723
+2023-03-21 22:03:09:904 [HTTP] --> HEAD /wd/hub/status
+2023-03-21 22:03:09:905 [HTTP] {}
+2023-03-21 22:03:09:913 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-03-21 22:03:09:918 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-03-21 22:03:09:961 [HTTP] <-- HEAD /wd/hub/status 200 37 ms - 68
+2023-03-21 22:03:09:962 [HTTP] 
+2023-03-21 22:03:09:971 [HTTP] --> HEAD /wd/hub/status
+2023-03-21 22:03:09:972 [HTTP] {}
+2023-03-21 22:03:09:978 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-03-21 22:03:09:980 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-03-21 22:03:09:986 [HTTP] <-- HEAD /wd/hub/status 200 12 ms - 68
+2023-03-21 22:03:09:988 [HTTP] 

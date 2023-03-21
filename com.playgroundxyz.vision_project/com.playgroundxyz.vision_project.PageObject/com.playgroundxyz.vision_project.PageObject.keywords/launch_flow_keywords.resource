@@ -18,8 +18,8 @@ launch camera app and wait until user scan the QR code from study link url
 paste the study link in the Textfield
     ${SlicedStudyLink} =    MobileTestLibrary.Get Text From Index    ${url}    42    78
     MobileTestLibrary.Set Given Text ClipBoard    ${SlicedStudyLink}
-    MobileTestLibrary.Click Element        ${Paste study link} 
-    
+    MobileTestLibrary.Wait Until Element Is Visible    ${Paste study link}
+    MobileTestLibrary.Click Element    ${Paste study link}
 
 tap on generated link
     MobileTestLibrary.Wait Until Element Is Visible    ${camera_smartchip_text}    timeout= 300

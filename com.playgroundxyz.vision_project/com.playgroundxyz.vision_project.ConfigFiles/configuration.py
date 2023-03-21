@@ -12,7 +12,7 @@ testData = read_Json_file('\\FusionTestFramework\\com.playgroundxyz.vision_proje
 
 deviceName = testData['deviceName']
 Browser = testData["Browser"]
-remote_url = testData['remote_url']
+remote_url = deviceDetails['appium-url']
 url = testData['Deeplink_url']
 currentAppVersion = testData['currentAppVersion']
 device = deviceDetails[deviceName]
