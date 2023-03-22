@@ -10,11 +10,11 @@ Resource        Allow Permission page keywords.resource
 *** Keywords ***
 Need to Manual Input here 'Look at the dot until it goes green and disappears'
     MobileTestLibrary.Wait Until Page Contains    ${EyeGazeValiidation titleText}
-    Dialogs.Execute Manual Step    Do you have completed Eye gaze Callibration    Failed to calibrate
+    Execute Manual steps
     MobileTestLibrary.Wait Until Page Contains Element    ${EyeGazeValiidation BeginBtn}
     MobileTestLibrary.Page Should Contain Text    Repeat five times. The dots will appear in random places.
     MobileTestLibrary.Click element    ${EyeGazeValiidation BeginBtn}
-    Dialogs.Execute Manual Step    Do you have completed Eye gaze Callibration    Failed to calibrate
+    Execute Manual steps
     MobileTestLibrary.Wait Until Page Contains    Just a few more to go
     MobileTestLibrary.Page Should Contain Text
     ...    Great job so far! Keep going. The dots will go green and disappear once the accuracy is validated.
@@ -88,3 +88,18 @@ Verify study instructions and tap on 'START STUDY' button
     MobileTestLibrary.Page Should Contain Text
     ...    When the browsing session is complete you will see a notification like this. Please act according to the instructions in the notification.
     MobileTestLibrary.Click element    ${studyInstructions StartStudyBtn}
+
+Execute Manual steps
+    ${result1}=    Dialogs.Get Value From User    Has your eye gaze calibration been completed? Input:Pass/Fail
+    WHILE    $True
+        ${result}=    Evaluate    "${result1}".lower()
+        IF    '${result}' == 'pass'
+            Pass Execution    That's awesome! The callibration has been completed
+            BREAK
+        ELSE IF    '${result}' == 'fail'
+            Fail    Testcase failed ! Please try again if you failed to calibrate
+            BREAK
+        ELSE
+            ${result1}=    Dialogs.Get Value From User    The choice you made was invalid, please input Pass/Fail
+        END
+    END
