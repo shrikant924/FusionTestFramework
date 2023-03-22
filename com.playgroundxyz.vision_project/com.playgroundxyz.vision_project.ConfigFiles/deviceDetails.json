@@ -16,7 +16,7 @@
     "fullReset": false,
     "captureScreenshots": true,
     "udid": "emulator-5554",
-    "appium-url": "http://0.0.0.0:4723/wd/hub",
+    "appiumurl": "http://0.0.0.0:4723/wd/hub",
     "avd": "Pixel_3a_API_30"
   },
   "Pixel_6": {
@@ -59,12 +59,13 @@
     "fullReset": false,
     "captureScreenshots": true,
     "udid": "LBYPFQXSVCZLUGQ4",
-    "appium-url": "http://0.0.0.0:4723/wd/hub",
+    "appiumurl": "http://0.0.0.0:4723/wd/hub",
     "chromedriverExecutableDir": "drivers/chromedriver.exe",
     "chromedriverUseSystemExecutable": true
   },
-  "Pixel_6Cloud": {
-    "securityToken": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI2ZDM2NmJiNS01NDAyLTQ4MmMtYTVhOC1kODZhODk4MDYyZjIifQ.eyJpYXQiOjE2Nzk0MTU1NzgsImp0aSI6ImI3M2MxNjZlLWY2NDktNGRlYy05NTJmLWRiOTQ4MDg1ZGMzZiIsImlzcyI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsImF1ZCI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsInN1YiI6IjUzMjM0YjAxLWYxZjQtNDViYS05NjZlLWFkYzdhYjhmNTAxOCIsInR5cCI6Ik9mZmxpbmUiLCJhenAiOiJvZmZsaW5lLXRva2VuLWdlbmVyYXRvciIsIm5vbmNlIjoiODFkYmQyYjUtNWQ3Ni00MDk1LWJjMTctZWQzZDUzMjNiM2I1Iiwic2Vzc2lvbl9zdGF0ZSI6Ijk0MjM5YzBmLWFhYjMtNDQ4NS1iMjIxLWE5MTk2ODA4MTQyYSIsInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIHByb2ZpbGUgZW1haWwifQ.K2UL8A9NTfRyH3HFk0i0eDr7naTgqlgKVxi4lD_fw90",
+
+  "Pixel_Cloud": {
+    "securityToken": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI2ZDM2NmJiNS01NDAyLTQ4MmMtYTVhOC1kODZhODk4MDYyZjIifQ.eyJpYXQiOjE2Nzk0Mjk5NzksImp0aSI6IjA4YWYwNjY4LTk2NTAtNDY4MS05MjM2LTZlOWQwN2E4ZTRiOCIsImlzcyI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsImF1ZCI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsInN1YiI6IjUzMjM0YjAxLWYxZjQtNDViYS05NjZlLWFkYzdhYjhmNTAxOCIsInR5cCI6Ik9mZmxpbmUiLCJhenAiOiJvZmZsaW5lLXRva2VuLWdlbmVyYXRvciIsIm5vbmNlIjoiY2FhOTZmMWYtNDhlYy00YzZmLTg3NmQtZjAyM2MxMzc3YzU1Iiwic2Vzc2lvbl9zdGF0ZSI6IjQwNWUzOGZmLTk1MGQtNGNmZS1hODBkLTQ3MzBiNDM4ZTM1NCIsInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIHByb2ZpbGUgZW1haWwifQ.-6P7Y9Woy6BFtdReo9flptRnh3skyU-u420_G69w3nc",
     "platformName": "android",
     "platformVersion": "13.0",
     "manufacturer": "Google",
@@ -76,6 +77,7 @@
     "takesScreenshot": false,
     "screenshotOnError": true,
     "openDeviceTimeout": 5,
-    "appium-url": "https://trial.perfectomobile.com/nexperience/perfectomobile/wd/hub"
+    "appiumurl": "https://trial.perfectomobile.com/nexperience/perfectomobile/wd/hub"
+   
   }
 }
