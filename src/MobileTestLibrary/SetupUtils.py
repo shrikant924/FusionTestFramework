@@ -1,4 +1,5 @@
 from datetime import datetime
+import os
 from appium.webdriver.appium_service import AppiumService, DEFAULT_PORT
 from robot.api.deco import keyword, library
 
@@ -10,8 +11,10 @@ class SetupUtils:
 
     @keyword
     def start_appium_service(self):
-        appiumLogFileName = datetime.now().strftime('%d-%m-%y_%H-%M-%S')
-        path = '/FusionTestFramework/AppiumLogs/' + 'appiumLog_' + appiumLogFileName + '.log'
+        appiumLogFileName = os.path.join('../FusionTestFramework/Appiumlogs/',
+                               datetime.now().strftime('%d-%m-%y_%H-%M-%S'))
+        os.makedirs(appiumLogFileName)
+        path = appiumLogFileName + '/appiumLog.log'
         appium_service.start(
             args=['--address', '127.0.0.1', '-p', str(DEFAULT_PORT), '--base-path', '/wd/hub/', '--log', path ,'--log-level', 
                   'debug' ,'--local-timezone'])

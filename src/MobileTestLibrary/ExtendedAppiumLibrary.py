@@ -12,6 +12,11 @@ class ExtendedAppiumLibrary(AppiumLibrary):
     def get_text_from_index(self, txt, startIndex, lastIndex):
         slicedText = txt[int(startIndex):int(lastIndex)]
         return slicedText
+    
+    @keyword
+    def get_text_from_startindex(self, txt, startIndex):
+        slicedText = txt[int(startIndex):]
+        return slicedText
 
     """Scrolling action stuffs"""
 

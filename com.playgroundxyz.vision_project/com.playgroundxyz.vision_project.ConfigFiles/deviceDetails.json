@@ -1,29 +1,9 @@
 {
-  "Pixel_Emulator": {
-    "platformName": "android",
-    "platformVersion": "11.0",
-    "deviceName": "emulator-5554",
-    "automationName": "UiAutomator2",
-    "appPackage": "com.androidsample.generalstore",
-    "appActivity": ".MainActivity",
-    "chromedriverUseSystemExecutable": true,
-    "chromedriverExecutableDir": "drivers/chromedriver.exe",
-    "automationType": "app",
-    "sessionName": "Automation test session",
-    "sessionDescription": "",
-    "deviceOrientation": "portrait",
-    "noReset": true,
-    "fullReset": false,
-    "captureScreenshots": true,
-    "udid": "emulator-5554",
-    "appiumurl": "http://0.0.0.0:4723/wd/hub",
-    "avd": "Pixel_3a_API_30"
-  },
   "Pixel_6": {
     "allow-insecure": true,
     "appActivity": ".MainActivity",
     "appPackage": "com.playgroundxyz.vision_project",
-    "appium-url": "http://0.0.0.0:4723/wd/hub",
+    "appium-url": "http://127.0.0.1:4723/wd/hub",
     "autoAcceptAlerts": true,
     "automationName": "appium",
     "automationType": "app",
@@ -43,6 +23,29 @@
     "unlockType": "pin",
     "unlockKey": "1111"
   },
+  "PixelEmulator": {
+    "allow-insecure": true,
+    "appActivity": ".MainActivity",
+    "appPackage": "com.playgroundxyz.vision_project",
+    "appium-url": "http://127.0.0.1:4723/wd/hub",
+    "autoAcceptAlerts": true,
+    "automationName": "appium",
+    "automationType": "app",
+    "captureScreenshots": false,
+    "chromedriverExecutableDir": "drivers/chromedriver.exe",
+    "chromedriverUseSystemExecutable": true,
+    "deviceName": "emulator-5554",
+    "deviceOrientation": "portrait",
+    "fullReset": false,
+    "noReset": true,
+    "platformName": "android",
+    "platformVersion": "11.0",
+    "relaxed-security": true,
+    "sessionDescription": "",
+    "sessionName": "Automation test session",
+    "avd": "PixelEmulator",
+    "newCommandTimeout": "180000"
+  },
   "vivo_s1": {
     "platformName": "android",
     "platformVersion": "12.0",
@@ -59,25 +62,21 @@
     "fullReset": false,
     "captureScreenshots": true,
     "udid": "LBYPFQXSVCZLUGQ4",
-    "appiumurl": "http://0.0.0.0:4723/wd/hub",
+    "appium-url": "http://127.0.0.1:4723/wd/hub",
     "chromedriverExecutableDir": "drivers/chromedriver.exe",
     "chromedriverUseSystemExecutable": true
   },
-
-  "Pixel_Cloud": {
-    "securityToken": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI2ZDM2NmJiNS01NDAyLTQ4MmMtYTVhOC1kODZhODk4MDYyZjIifQ.eyJpYXQiOjE2Nzk0Mjk5NzksImp0aSI6IjA4YWYwNjY4LTk2NTAtNDY4MS05MjM2LTZlOWQwN2E4ZTRiOCIsImlzcyI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsImF1ZCI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsInN1YiI6IjUzMjM0YjAxLWYxZjQtNDViYS05NjZlLWFkYzdhYjhmNTAxOCIsInR5cCI6Ik9mZmxpbmUiLCJhenAiOiJvZmZsaW5lLXRva2VuLWdlbmVyYXRvciIsIm5vbmNlIjoiY2FhOTZmMWYtNDhlYy00YzZmLTg3NmQtZjAyM2MxMzc3YzU1Iiwic2Vzc2lvbl9zdGF0ZSI6IjQwNWUzOGZmLTk1MGQtNGNmZS1hODBkLTQ3MzBiNDM4ZTM1NCIsInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIHByb2ZpbGUgZW1haWwifQ.-6P7Y9Woy6BFtdReo9flptRnh3skyU-u420_G69w3nc",
-    "platformName": "android",
-    "platformVersion": "13.0",
-    "manufacturer": "Google",
-    "model": "Pixel 6",
-    "app": "PRIVATE:1679415197621_Vision Project_1.1.23_Apkpure.apk",
-    "enableAppiumBehavior": true,
-    "autoLaunch": true,
-    "autoInstrument": true,
-    "takesScreenshot": false,
-    "screenshotOnError": true,
-    "openDeviceTimeout": 5,
-    "appiumurl": "https://trial.perfectomobile.com/nexperience/perfectomobile/wd/hub"
-   
+  "cloud": {
+    "platformName": "Android",
+    "deviceName": "Android GoogleAPI Emulator",
+    "deviceOrientation": "portrait",
+    "platformVersion": "12.0",
+    "automationName": "UiAutomator2",
+    "app": "storage:filename=Vision Project_1.1.23_Apkpure.apk",
+    "appium-url": "https://shrikantl:46fadbdd-af80-4d64-a12d-f07c7be9eb24@ondemand.us-west-1.saucelabs.com:443/wd/hub",
+    "sauce:options": {
+      "build": "appium-build-XKNU0",
+      "name": "Verify that if social app is not installed on phone then App was not found screen appears"
+    }
   }
 }

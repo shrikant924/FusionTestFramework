@@ -12,7 +12,7 @@ testData = JsonFileReader.read_Json_file('\\FusionTestFramework\\com.playgroundx
 
 deviceName = testData['deviceName']
 Browser = testData["Browser"]
-remote_url = deviceDetails[deviceName]['appiumurl']
+remote_url = deviceDetails[deviceName]['appium-url']
 url = testData['Deeplink_url']
 currentAppVersion = testData['currentAppVersion']
 device = deviceDetails[deviceName]
