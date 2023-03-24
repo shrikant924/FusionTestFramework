@@ -102,7 +102,7 @@ tap on 'BEGIN' button
 
 read 'privacy Notice'
     MobileTestLibrary.Wait Until Page Contains    Privacy Notice
-    MobileTestLibrary.Scroll To Element By Exact Text In LongView    www.playground.xyz/privacy/    30
+    MobileTestLibrary.Scroll To Element By Exact Text In LongView    www.playground.xyz/privacy/    50
 
 accept 'privacy Notice'
     MobileTestLibrary.Wait Until Element Is Visible    ${PrivacyNoticeCheckbox}

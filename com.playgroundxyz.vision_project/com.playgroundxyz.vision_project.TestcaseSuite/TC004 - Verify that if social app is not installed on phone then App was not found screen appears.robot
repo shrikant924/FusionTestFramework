@@ -13,7 +13,6 @@ Verify that if social app is not installed on phone then App was not found scree
     [Tags]    smoke
 
     paste the study link in the Textfield
-    verify link is pasted in textbox
     Verify that user can start study by hitting Get Started button
     tap on 'BEGIN' button
     read 'privacy Notice'

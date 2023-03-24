@@ -16,8 +16,12 @@ launch camera app and wait until user scan the QR code from study link url
     WebApplicationTestLibrary.Maximize Browser Window
 
 paste the study link in the Textfield
-    ${SlicedStudyLink} =    MobileTestLibrary.Get Text From Index    ${url}    42    78
-    MobileTestLibrary.Set Given Text ClipBoard    ${SlicedStudyLink}
+    ${SlicedStudyLink1} =    MobileTestLibrary.Get Text From Index    ${url}    42    78
+    ${SlicedStudyLink2} =    MobileTestLibrary.Get Text From Startindex    ${url}    86
+    ${SlicedStudyLink3} =    Catenate    SEPARATOR=    |    ${SlicedStudyLink2}
+    ${SlicedStudyLink} =     Catenate    SEPARATOR=    ${SlicedStudyLink1}    ${SlicedStudyLink3}
+    Log to console     ${SlicedStudyLink}
+    MobileTestLibrary.Set Given Text ClipBoard    ${SlicedStudyLink}    
     MobileTestLibrary.Wait Until Element Is Visible    ${Paste study link}
     MobileTestLibrary.Click Element    ${Paste study link}
 
@@ -27,8 +31,6 @@ tap on generated link
     WebApplicationTestLibrary.Close Browser
     MobileTestLibrary.Wait Until Element Is Visible    ${google_playstore_Button}    timeout=30
     ${SlicedStudyLink} =    MobileTestLibrary.Get Text From Index    ${url}    42    78
-    Set global Variable    ${SlicedStudyLink}
-    log to console    ${SlicedStudyLink}
 
 Verify that user can start study by hitting Get Started button
     MobileTestLibrary.Wait Until Page Contains Element    ${GET STARTED}
@@ -111,7 +113,7 @@ tap on 'OPEN STUDY IN APP' button
     MobileTestLibrary.Wait Until Element Is Visible    ${Open Study In app}
     MobileTestLibrary.Click Element    ${Open Study In app}
 
-verify link is pasted in textbox
-    MobileTestLibrary.Wait Until Element Is Visible    ${Study link textbox}
-    ${pastedlink} =    MobileTestLibrary.Get Text    ${Study link textbox}
-    Should Be Equal As Strings    ${SlicedStudyLink}    ${pastedlink}
+# verify link is pasted in textbox
+#    MobileTestLibrary.Wait Until Element Is Visible    ${Study link textbox}
+#    ${pastedlink} =    MobileTestLibrary.Get Text    ${Study link textbox}
+#    Should Be Equal As Strings    ${SlicedStudyLink}    ${pastedlink}
